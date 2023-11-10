@@ -159,37 +159,127 @@
 </div>
 {{-- Electronic Commerce End --}}
 
-{{-- Point 3 Start --}}
+{{-- Merchandise Start --}}
 
+<div class="merchandise">
+    <div class="point3_header">
+        <div class="point3_header1">merchandise</div>
+        <div class="point3_header2">商品紹介一覧</div>
+        <div class="point3_body_text">LOGOでは、さまざまな商品をご提供しています。</div>
+        <div class="bef_aft3__btngrp">
+            <div class="before3_btn">すべて</div>
+            <div class="before3_btn">新着</div>
+            <div class="before3_btn">出刃</div>
+            <div class="before3_btn">牛刀</div>
+            <div class="before3_btn">ペティ</div>
+        </div>
+    </div>
+    <div class="merchan_main">
+        <div class="merchan_main1">
 
+        </div>
+        <div class="merchan_main2">
 
-{{-- Point 3 End --}}
+        </div>
+        <div class="merchan_main3">
+            
+        </div>
+        <div class="merchan_main4">
+            
+        </div>
+        <div class="merchan_main5">
+            
+        </div>
+        <div class="merchan_main6">
+            
+        </div>
+        <div class="merchan_main7">
+            
+        </div>
+        <div class="merchan_main8">
+            
+        </div>
+        <div class="merchan_main9">
+            
+        </div>
+        <div class="merchan_main10">
+            
+        </div>
+        <div class="merchan_main11">
+            
+        </div>
+        <div class="merchan_main12">
+            
+        </div>
+        <div class="merchan_main13">
+            
+        </div>
+        <div class="merchan_main14">
+            
+        </div>
+        <div class="merchan_main15">
+            
+        </div>
+        <div class="merchan_main16">
+            
+        </div>
+        <div class="merchan_main17">
+            
+        </div>
+        <div class="merchan_main18">
+            
+        </div>
+        <div class="merchan_main19">
+            
+        </div>
+        <div class="merchan_main20">
+            
+        </div>
+        <div class="merchan_pagiation">
+            <ul id="pagination-demo" class="pagination-sm"></ul>
+        </div>
+    </div>
+</div>
 
-{{-- Order Part Start --}}
+{{-- Merchandise End --}}
 
+{{-- last Part Start --}}
 
+<div class="contact22">
+    <div class="contact1__div">
+        <div class="contact1_header">WEBでのお問い合わせこちらから</div>
+        <div class="contact1_content">お申込手続きが最短  <span class="contact1_content__span">1</span>  分で終わる</div>
+        <div class="comparison_btn__div2">
+            <button class="custom_topics_btn__button"><span>ご注文はこちらから&nbsp;</span></button>
+        </div>
+    </div>
+    <div class="contact1_img21">
+        <img src="{{ "assets/img/551312.png" }}" alt="">
+    </div>
+    <div class="contact1_img22">
+        <img src="{{"assets/img/23606633.png"}}" alt="">
+    </div>
+</div>
 
-{{-- Order Part End --}}
+{{-- last Part End --}}
 
-{{-- Before/After Part Start --}}
-
-
-
-{{-- Before/After Part End --}}
-
-{{-- Order Part Start --}}
-
-
-
-{{-- Order Part End --}}
-
-{{-- Contact Start --}}
-
-
-
-{{-- Contact End --}}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() { 
+        $('#pagination-demo').twbsPagination({
+            totalPages: 16,
+            visiblePages: 6,
+            next: 'Next',
+            prev: 'Prev',
+            onPageClick: function (event, page) {
+                //fetch content and render here
+                $('#page-content').text('Page ' + page) + ' content here';
+            }
+        });
+    })
+
+</script>
 
 
 @endsection
