@@ -1157,7 +1157,7 @@ img.table_content_img {
     grid-template-columns: auto auto auto;
     column-gap: 10rem;
     row-gap: 5rem;
-    margin-top: 5rem;
+    margin: 5rem 5.7rem;
 }
 .worry_midimg2 img {
     width: 70%;
@@ -1189,11 +1189,30 @@ img.table_content_img {
 }
 .merit_main {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
+    margin: 4.7rem 5.7rem;
 }
 .merit_main1 {
-    width: calc(45vw);
-    
+    width: calc(50vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.merit_main2 {
+    width: calc(50vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.merit_main__head {
+    font-size: 2.5rem;
+    margin-bottom: 2.7rem;
+    font-weight: 600;
+}
+.merit_main__text {
+    font-size: 1.8rem;
+    width: 75%;
 }
 /* Merit CSS End */
 

@@ -81,12 +81,41 @@
         <div class="point3_body_text">研ぎのメリットについてご紹介致します。</div>
     </div>
     <div class="merit_main">
+        <div class="merit_main2">
+            <div class="merit_main__head">シャープナーと包丁研ぎの違いとは？</div>
+            <div class="merit_main__text">
+                大切な包丁を長く大事に使うためにはメンテナンスは欠かせません。
+                「包丁の切れ味を良くする」という目的は同じですが、シャープナー
+                と手研ぎの包丁研ぎでは構造が全く異なるためその役割はまったくの
+                別物で、切れ味も道具の寿命にも大きな違いが出ます。
+            </div>
+        </div>
         <div class="merit_main1">
             <img src="{{"assets/img/Group_11663.png"}}" alt="">
         </div>
         <div class="merit_main1">
-            <div class="merit_main__head">Group_11663.png</div>
-            <div class="merit_main__text"></div>
+            <img src="{{"assets/img/Group_11663.png"}}" alt="">
+        </div>
+        <div class="merit_main2">
+            <div class="merit_main__head">シャープナーと包丁研ぎの違いとは？</div>
+            <div class="merit_main__text">
+                大切な包丁を長く大事に使うためにはメンテナンスは欠かせません。
+                「包丁の切れ味を良くする」という目的は同じですが、シャープナー
+                と手研ぎの包丁研ぎでは構造が全く異なるためその役割はまったくの
+                別物で、切れ味も道具の寿命にも大きな違いが出ます。
+            </div>
+        </div>
+        <div class="merit_main2">
+            <div class="merit_main__head">シャープナーと包丁研ぎの違いとは？</div>
+            <div class="merit_main__text">
+                大切な包丁を長く大事に使うためにはメンテナンスは欠かせません。
+                「包丁の切れ味を良くする」という目的は同じですが、シャープナー
+                と手研ぎの包丁研ぎでは構造が全く異なるためその役割はまったくの
+                別物で、切れ味も道具の寿命にも大きな違いが出ます。
+            </div>
+        </div>
+        <div class="merit_main1">
+            <img src="{{"assets/img/Group_11663.png"}}" alt="">
         </div>
     </div>
 </div>
