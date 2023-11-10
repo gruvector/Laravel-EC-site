@@ -1,0 +1,37 @@
+{
+  "name": "vonage/client",
+  "description": "PHP Client for using Vonage's API.",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Tim Lytle",
+      "email": "tim@nexmo.com",
+      "role": "Developer",
+      "homepage": "http://twitter.com/tjlytle"
+    },
+    {
+      "name": "Michael Heap",
+      "email": "michael.heap@vonage.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Lorna Mitchell",
+      "email": "lorna.mitchell@vonage.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Chris Tankersley",
+      "email": "chris.tankersley@vonage.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "devrel@nexmo.com"
+  },
+  "require": {
+    "php": ">=7.2",
+    "guzzlehttp/guzzle": "^7.0",
+    "vonage/client-core": "^2.0"
+  }
+}

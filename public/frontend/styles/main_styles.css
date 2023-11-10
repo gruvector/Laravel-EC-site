@@ -1,0 +1,1200 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900");
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+* {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.1rem;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.1rem;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    background: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+div {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin-bottom: 0rem;
+}
+p {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #828282;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.1rem;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.1rem;
+}
+p a {
+    display: inline;
+    position: relative;
+    color: inherit;
+    border-bottom: solid 0.1rem #ffa07f;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+a,
+a:hover,
+a:visited,
+a:active,
+a:link {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.1rem;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.1rem;
+}
+p a:active {
+    position: relative;
+    color: #ff6347;
+}
+p a:hover {
+    color: #ffffff;
+    background: #ffa07f;
+}
+p a:hover::after {
+    opacity: 0.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+h4 {
+    font-size: 1.8rem;
+}
+h5 {
+    font-size: 1.4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.1rem;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 0.1rem;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+    display: block;
+}
+
+.footer {
+    background-color: #222222;
+    width: 100%;
+    height: 27.3rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 8.7rem 0 0 17.5rem;
+}
+.footer1 {
+    width: auto;
+    height: 100%;
+}
+.footer1_logo {
+    font-size: 3.4rem;
+    font-weight: bold;
+    margin-left: 0.7rem;
+}
+.footer1_text {
+    font-size: 1.4rem;
+}
+.footer2 {
+    width: auto;
+    height: 100%;
+    margin-top: 9px;
+    margin-left: calc(20vw);
+}
+
+.footer2_link__link {
+    margin-right: 6.3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    /* letter-spacing: -1px; */
+}
+.footer2_text {
+    margin-top: 6.2rem;
+    margin-left: 10.1rem;
+    color: #8d8d8d;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+.footer2_text1 {
+    font-size: 1.4rem;
+}
+.footer2_text2 {
+    font-size: 1.3rem;
+    margin-left: 2.6rem;
+}
+.footer2_text3 {
+    margin-left: 5.9rem;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.loginNav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    width: 9rem;
+    height: 5.5rem;
+    background-color: #e5ac22;
+    border-radius: 2.8rem;
+    justify-content: center;
+}
+
+.loginNav_avartar {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 6px auto 1px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginNav_img {
+    margin: 4px auto 3px auto;
+    width: 80%;
+    height: auto;
+}
+.loginNav_text {
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3px;
+}
+
+.basketNav {
+    display: flex;
+    margin-left: 1.5rem;
+    margin-right: 5rem;
+    width: 20rem;
+    height: 5.5rem;
+    background-color: #e5ac22;
+    border-radius: 2.8rem;
+    align-items: center;
+}
+.basketNav_avartar {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.basketNav_text {
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+.basketNav_img {
+    margin: 8px auto 10px auto;
+    width: 50%;
+    height: auto;
+}
+.nav {
+    background-color: #efeee8;
+    padding: 1.5rem 1.1rem;
+}
+.nav_img {
+    background-image: url("./../../assets/img/S0A0858.png");
+    background-color: #efeee8;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 67.9rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.topnav {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.nav_logo__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #efeee8;
+    width: 14rem;
+    height: 13.3rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.nav_logo__circle {
+    width: 100%;
+    height: 4.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_logo_circle__span {
+    width: 4.2rem;
+    height: 100%;
+    background-color: #e5ac23;
+    border-radius: 50%;
+}
+
+.nav_logo_text__div {
+    margin-top: 0.9rem;
+}
+
+.nav_logo__text {
+    color: #e5ac23;
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+.nav2 {
+    width: 100%;
+}
+.mainnav {
+    margin-left: calc(2vw);
+    margin-right: calc(3vw);
+    margin-top: 2.8rem;
+    height: 5.5rem;
+    background-color: #efeee8;
+    border-radius: 2.8rem;
+    display: flex;
+    align-items: center;
+}
+.mainnav_inside {
+    margin-left: 3.8rem;
+    margin-right: 5.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    letter-spacing: -0.3rem;
+    width: 100%;
+}
+.mainnav_inside__link {
+    color: #e5ac22;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.mainnav_inside__link:first-child {
+    letter-spacing: -0.1rem;
+}
+.mainnav_inside__link:last-child {
+    margin-right: 0rem;
+}
+.rightnav {
+    justify-self: flex-end;
+    margin-right: 4.6rem;
+    margin-top: 2.8rem;
+    display: flex;
+}
+.midtext {
+    width: 100%;
+    height: auto;
+    margin-top: calc(18vw);
+    margin-left: calc(10vw);
+}
+.midtext__p {
+    font-size: 5.5rem;
+    font-weight: normal;
+    color: #c6c3b2;
+}
+.bottomtext {
+    width: 100%;
+    font-size: 18.1rem;
+    font-weight: bold;
+    color: white;
+    line-height: 14rem;
+}
+.bottomtext2 {
+    width: 100%;
+    font-size: 10rem;
+    font-weight: bold;
+    color: white;
+    line-height: 10rem;
+}
+.bottom_img {
+    background-image: linear-gradient(
+        rgba(239, 238, 232, 0),
+        rgba(239, 238, 232, 0.5),
+        rgba(239, 238, 232, 0.8),
+        rgba(239, 238, 232, 0.95),
+        rgba(239, 238, 232, 1),
+        rgba(239, 238, 232, 1)
+    );
+    width: 100%;
+    height: 6.2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.custom_topics_com {
+    width: 29rem;
+    height: 43rem;
+    margin-left: 100rem;
+}
+.custom_topics_com1 {
+    position: relative;
+    border-radius: 4.3rem;
+    border: #ffedc1 0.5px solid;
+    box-shadow: 2px 1px 3px 1px #ffedc1;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.custom_topics_com2 {
+    width: 13rem;
+    height: 3.6rem;
+    position: absolute;
+    transform: translate(-0.8rem, -23rem);
+    background-image: url("../../assets/img/Group_348.png");
+    color: white;
+    font-size: 1.4rem;
+    font-family: bold;
+}
+.custom_topics_com2__text {
+    margin-top: 0.5rem;
+    margin-left: 2.9rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.custom_topics_com1_text {
+    padding: 3.5rem 2rem;
+}
+.custom_topics_com1_text1 {
+    font-size: 1.3rem;
+    color: #979797;
+}
+.custom_topics_com1_text2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 0.7rem;
+    margin-left: 0.9rem;
+}
+.custom_topics_com1_text3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1.9rem;
+    letter-spacing: -2px;
+}
+.custom_topics_bg {
+    background-image: url("../../assets/img/Path_421_1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    padding-bottom: 19rem;
+}
+.custom_topics {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5.7rem;
+}
+.custom_topics1 {
+    width: 30rem;
+    padding-left: 7.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.custom_topics1__div1 {
+    display: flex;
+    flex-direction: row;
+}
+.custom_slider_nav {
+    display: flex !important;
+    height: auto;
+    flex-direction: row;
+    font-size: 1rem;
+}
+.custom_topics1_head {
+    font-size: 6.8rem;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    letter-spacing: 9px;
+    line-height: 5rem;
+}
+.custom_topics1_subtitle {
+    font-size: 1.7rem;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 6px;
+}
+.custom_topics2 {
+    margin: 1.2rem 0 2.7rem 1.1rem;
+    width: 140rem;
+}
+.custom_topics2_1 {
+    width: 32.8rem;
+    height: auto;
+}
+.custom_topics_btn__div {
+    margin-top: 2.5rem;
+    display: flex;
+}
+.custom_topics_btn__button {
+    background-color: #e5ac22;
+    width: 28rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2.6rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 2px auto;
+    transition: all 0.5s;
+}
+.custom_topics_btn__button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 1.8rem;
+}
+
+.custom_topics_btn__button span:after {
+    font-size: 4rem;
+    font-weight: 100;
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2rem;
+    transition: 0.5s;
+    transform: translateY(-1.7rem);
+}
+
+.custom_topics_btn__button:hover span {
+    padding-right: 2.5rem;
+}
+
+.custom_topics_btn__button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ABout us CSS start */
+
+.about_us {
+    width: 100%;
+    height: 50rem;
+}
+.aboutus_aboutus {
+    font-size: 5.5rem;
+    color: #fff;
+    letter-spacing: 1rem;
+    position: absolute;
+    transform: translate(10.7rem, 10.4rem) rotate(-10deg);
+    text-shadow: -1px 0 #e5ac20, 0 1px #e5ac20, 1px 0 #e5ac20, 0 -1px #e5ac20;
+}
+.aboutus_raku {
+    margin: 0;
+    transform: translate(0, -37rem);
+    width: 100%;
+    position: absolute;
+}
+.aboutus_text {
+    width: 40rem;
+    font-size: 1.7rem;
+    font-weight: 200;
+    line-height: 4rem;
+    margin-top: 15rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.aboutus__img {
+    width: 100%;
+    height: 100%;
+}
+.aboutus_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    z-index: 1;
+    margin-left: 17.8rem;
+    margin-right: 13.11rem;
+}
+
+/* About us CSS end */
+
+/* Point 3 CSS start */
+
+.point3_com {
+    width: 38rem;
+    height: 46rem;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 3px 1px #ffedc1;
+    background-color: white;
+}
+.point3_com_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* justify-content: center; */
+}
+.point3_com__img {
+    width: 19rem;
+    height: 19rem;
+    margin: 7rem auto 2rem auto;
+    border-radius: 50%;
+    background-color: #efeee8;
+}
+.point3_com__head {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e5ac22;
+    text-align: center;
+}
+.point3_com__text {
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: black;
+    margin: 1.7rem;
+}
+.point3_com_badge {
+    position: absolute;
+    width: 22.6rem;
+    height: 5rem;
+    background-image: url("../../assets/img/ribbon.png");
+    transform: translate(-1px, -1px);
+    z-index: 2;
+    padding: 0.6rem 1.9rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+}
+.point3_header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.point3_header1 {
+    margin-top: 5.22rem;
+    font-size: 3rem;
+    font-weight: 200;
+    text-shadow: -1px 0 #e5ac20, 0 1px #e5ac20, 1px 0 #e5ac20, 0 -1px #e5ac20;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+.point3_header2 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.point3_header2 span {
+    font-size: 5.5rem;
+    font-weight: 400;
+    color: #e5ac22;
+    line-height: 5.5rem;
+}
+.point3_body_text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-top: 3.4rem;
+    text-align: center;
+}
+.point3_body {
+    width: 100%;
+    height: 72rem;
+    background-image: url("../../assets/img/Group_11340.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5.5rem;
+}
+.point3_body_main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8rem;
+}
+
+.point3_com_badge__text {
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+/* Point 3 CSS End */
+
+/* Comparison CSS Start */
+
+.comparison {
+    margin: 4rem 5.7rem 5rem 5.7rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.comparison_table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: #fffef5;
+}
+.comparison_table td {
+    font-size: 1.6rem;
+    border: 2px solid #e5ac22;
+}
+
+td.comparison_title {
+    width: 19%;
+    height: 10rem;
+    border-top-left-radius: 2rem;
+}
+td.comparison_content {
+    width: 27%;
+    height: 10rem;
+    font-size: 2.5rem;
+}
+td.comparison_table_header {
+    width: 27%;
+    height: 10rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    background-color: #fff8d1;
+}
+td.comparison_table_title_content {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+img.table_content_img {
+    margin-top: 2.2rem;
+}
+.table_content {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    margin-bottom: 2.2rem;
+}
+.table_content1 {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+}
+.table_content2 {
+    font-size: 1.6rem;
+    margin-bottom: 2.2rem;
+}
+.comparison_table_logo {
+    background-color: #fff8d1;
+}
+.comparison_btn__div {
+    margin-top: 5rem;
+    display: flex;
+}
+.comparison_btn__div2 {
+    margin-top: 1.7rem;
+    display: flex;
+}
+/* Comparison CSS End */
+
+/* Before After CSS start */
+
+.before {
+    display: flex;
+
+    margin-top: 4rem;
+    margin: 4rem 5.7rem 14.5rem 5.7rem;
+}
+.before_com {
+    margin-right: 4.4rem;
+    text-align: center;
+}
+.before_com__p1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 2.05rem;
+    color: #000000;
+}
+.before_com__p2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 2.4rem;
+    color: #000000;
+}
+.owl-two {
+    position: relative;
+}
+.owl-nav {
+    position: absolute;
+    transform: translateY(-25rem);
+}
+.owl-prev {
+    position: absolute;
+    transform: translateX(calc(100vw - 200px));
+}
+.owl-next {
+    position: absolute;
+    transform: translateX(-3rem);
+}
+.am-next2,
+.am-prev2 {
+    border: none;
+    border-radius: 50%;
+}
+
+/* Before After CSS End */
+.contact_parent {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5ac22;
+    margin-top: 3.5rem;
+    margin-bottom: 8.4rem;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e5ac22;
+    justify-content: space-around;
+}
+.contact_part {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.contact_part1_img1 {
+    margin-right: 2.7rem;
+}
+.contact_part1_img2 {
+    margin-left: 4.3rem;
+}
+.part1_text__header {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+.part1_text__content {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.part1_text__phone {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+}
+.contact_img__img {
+    width: 100%;
+    height: 100%;
+}
+.contact1 {
+    display: flex;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+}
+.contact1__div {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact1_header {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.contact1_content {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: underline 3px solid red;
+}
+.contact1_content__span {
+    font-size: 4.5rem;
+    font-weight: 400;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #e5ac22;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.contact1_img {
+    position: absolute;
+    transform: translate(calc(70vw), 1rem);
+}
+/* Contact CSS Start */
+
+/* Introduction Page CSS Start */
+
+/* About Us2 CSS Start */
+
+.aboutus2 {
+    width: 100%;
+
+    background-image: url("../../assets/img/Path_421_1.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.aboutus2_aboutus {
+    font-size: 5.5rem;
+    color: #efeee8;
+    letter-spacing: 1rem;
+    position: absolute;
+    transform: translate(10.7rem, 10.4rem) rotate(-10deg);
+    text-shadow: -1px 0 #e5ac20, 0 1px #e5ac20, 1px 0 #e5ac20, 0 -1px #e5ac20;
+}
+/* About Us2 Css End */
+
+/* Point3 2 CSS start */
+
+.point3_body2 {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 3rem;
+}
+.point3_com2 {
+    width: calc(22vw);
+    border-radius: 1rem;
+    background-color: white;
+}
+.point3_com__img2 {
+    margin: 7rem auto 2rem auto;
+}
+/* Point3 2 CSS End */
+
+/* Order Part CSS Start */
+.contact2 {
+    display: flex;
+    background-image: url("../../assets/img/Group_11340_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 28rem;
+}
+.contact22 {
+    display: flex;
+    background-image: url("../../assets/img/Group_11340_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 28rem;
+    margin-bottom: 8rem;
+}
+.contact1_img21 {
+    position: absolute;
+    transform: translate(calc(62vw), 5rem);
+}
+.contact1_img22 {
+    position: absolute;
+    transform: translate(calc(22vw), 5rem);
+}
+/* Order Part CSS End */
+
+/* Before/After CSS Start */
+.before_after_2 {
+    margin-top: 1.35rem;
+}
+.before2 {
+    display: flex;
+    width: 100%;
+}
+.before21 {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+.before22 {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+.before2_arrow {
+    position: absolute;
+    transform: translate(calc(47.7vw), 18rem);
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.before21_text {
+    font-size: 3.5rem;
+    color: white;
+    letter-spacing: 3px;
+    position: absolute;
+    align-self: flex-end;
+    margin-right: calc(12vw);
+}
+.before22_text {
+    font-size: 3.5rem;
+    color: white;
+    letter-spacing: 3px;
+    position: absolute;
+    align-self: flex-end;
+    margin-left: calc(12vw);
+}
+.after2 {
+    background-image: url("../../assets/img/Path_26095.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 12.3rem;
+}
+.desc {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5.7rem 9rem 5.7rem;
+}
+.desc_text {
+    width: 50rem;
+}
+.desc_text__head {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 4.22rem;
+}
+.desc_text__text {
+    font-size: 1.8rem;
+    margin-top: 2.9rem;
+}
+/* Before/After CSS End */
+
+/* Introduction Page CSS End */
+
+/* Condition Page Css Start */
+
+/* Before/After 3 CSS start */
+.bef_aft3 {
+    background-image: url("../../assets/img/Path_421_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.bef_aft3__btngrp {
+    max-width: 62rem;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    padding: 4rem 0;
+    justify-content: space-between;
+}
+.before3_btn {
+    width: 14rem;
+    font-size: 2rem;
+    height: 4rem;
+    border-radius: 2.1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5ac20;
+    
+}
+.before3_btn:active {
+    background-color: #e5ac20;
+    color: white;
+    border: 1px solid #e5ac20;
+    font-weight: 500;
+}
+.before3 {
+    display: grid;
+    margin: 4.5rem 5.7rem 0 5.7rem;
+    grid-template-columns: auto auto auto;
+    row-gap: 4rem;
+
+}
+.before3_img {
+    grid-column: 2 / span 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Before/After 3 CSS ENd */
+
+/* Worry CSS Start */
+
+.worry {
+    margin-top: 7rem;
+
+}
+
+.worry_part {
+    width: 100%;
+    margin-bottom: calc(20vw);
+}
+.worry_part__mainimg {
+    position: relative;
+    margin-top: 7.8rem;
+    max-width: 61rem;
+    width: 95%;
+    background-image: url("../../assets/img/Union_4.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.worry_part__partimg {
+    max-width: calc(50vw);
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12rem 9.5rem 6.3rem 11rem;
+}
+
+.worry_part__partimg1 {
+    max-width: 33rem;
+    width: 100%;
+    position: absolute;
+    top: -10rem;
+    left: calc(14vw);
+    font-size: 2.9rem;
+}
+.worry_part_partimg__p {
+    position: absolute;
+    top: 10rem;
+}
+.worry_part__partimg2 {
+    max-width: calc(25vw);
+    width: 100%;
+    position: absolute;
+    top: 13rem;
+    left: calc(3vw);
+}
+.worry_part__partimg3 {
+    max-width: calc(25vw);
+    width: 100%;
+    position: absolute;
+    top: 43rem;
+    left: calc(20vw);
+}
+.worry_part__partimg4 {
+    max-width: calc(25vw);
+    width: 100%;
+    position: absolute;
+    top: -10rem;
+    left: calc(60vw);
+}
+.worry_part__partimg5 {
+    max-width: calc(25vw);
+    width: 100%;
+    position: absolute;
+    top: 13rem;
+    left: calc(66vw);
+}
+.worry_part__partimg6 {
+    max-width: calc(25vw);
+    width: 100%;
+    position: absolute;
+    top: 43rem;
+    left: calc(60vw);
+}
+.worry_midimg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-right: 10rem;
+    max-height: 32rem;
+}
+.worry_midimg1 {
+    width: 60%;
+}
+.worry_midimg1 img {
+    width: 100%;
+}
+.worry_midimg2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.worry_imgarray {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10rem;
+    row-gap: 5rem;
+    margin-top: 5rem;
+}
+.worry_midimg2 img {
+    width: 70%;
+}
+.worry_imgarray_com {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.worry_imgarray_com__p {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+/* Worry CSS End */
+
+/* Conditioin Page CSS End */
+
+/* EC Introduction CSS Start */
+
+/* Merit CSS Start */
+.merit {
+    background-image: url("../../assets/img/Path_421_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.merit_main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.merit_main1 {
+    width: calc(45vw);
+    
+}
+/* Merit CSS End */
+
+/* EC Introduction CSS End */

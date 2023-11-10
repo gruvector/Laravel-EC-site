@@ -1,0 +1,10 @@
+.bootstrap-tagsinput {
+    display: block !important;
+}
+.custom-file {
+    display: block;
+}
+
+.table thead > tr > th, .table thead > tr > td, .table tfoot > tr > th, .table tfoot > tr > td{
+    text-transform: capitalize;
+}
