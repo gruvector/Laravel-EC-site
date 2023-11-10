@@ -1193,17 +1193,18 @@ img.table_content_img {
     margin: 4.7rem 5.7rem;
 }
 .merit_main1 {
-    width: calc(50vw);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .merit_main2 {
-    width: calc(50vw);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+.merit_main2:nth-child(even) {
+    margin-left: 10rem;
 }
 .merit_main__head {
     font-size: 2.5rem;
@@ -1216,4 +1217,37 @@ img.table_content_img {
 }
 /* Merit CSS End */
 
+/* EC Css Start */
+
+.ec {
+    margin: 6.8rem 5.7rem 0 5.7rem;
+    width: 100%;
+}
+.ec_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+}
+.ec_main_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ec_main_part img {
+    max-width: 25rem;
+    width: 100%;
+}
+
+.ec_part__head {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.ec_part__text {
+     font-size: 1.8rem;
+}
+/* EC CSS End */
 /* EC Introduction CSS End */

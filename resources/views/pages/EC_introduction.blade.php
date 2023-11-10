@@ -122,11 +122,42 @@
 
 {{-- Merit End --}}
 
-{{-- Worry Start --}}
+{{-- Electronic commerce Start --}}
 
-
-
-{{-- worry End --}}
+<div class="ec">
+    <div class="point3_header">
+        <div class="point3_header1">ELECTRONIC COMMERCE</div>
+        <div class="point3_header2">包丁ECサービスの特徴</div>
+        <div class="point3_body_text">包丁ECではこんな事ができます。</div>
+    </div>
+    <div class="ec_main">
+        <div class="ec_main_part">
+            <img src="{{"assets/img/Group_11666.png"}}" alt="">
+            <div class="ec_part__head">全国発送</div>
+            <div class="ec_part__text">
+                オンラインストアでご注文いただいた商品は<br />
+                全国配送可能です。
+            </div>
+        </div>
+        <div class="ec_main_part">
+            <img src="{{"assets/img/Group_11667.png"}}" alt="">
+            <div class="ec_part__head">アフターサポート</div>
+            <div class="ec_part__text">
+                首元の調整などの購入後の<br />
+                アフターサポートも行います。
+            </div>
+        </div>
+        <div class="ec_main_part">
+            <img src="{{"assets/img/Group_11668.png"}}" alt="">
+            <div class="ec_part__head">さまざまなお支払い</div>
+            <div class="ec_part__text">
+                クレジットカードやコンビニ支払いなど、<br />
+                さまざまなお支払いに対応しております。
+            </div>
+        </div>
+    </div>
+</div>
+{{-- Electronic Commerce End --}}
 
 {{-- Point 3 Start --}}
 
