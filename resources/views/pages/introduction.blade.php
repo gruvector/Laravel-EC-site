@@ -25,8 +25,8 @@
                         <a href="{{ route('intro') }}" class="mainnav_inside__link">テキスト</a>
                         <a href="{{ route('condition') }}" class="mainnav_inside__link">テキスト</a>
                         <a href="{{ route('EC-intro')}}" class="mainnav_inside__link">テキスト</a>
-                        <a href="#" class="mainnav_inside__link">テキスト</a>
-                        <a href="#" class="mainnav_inside__link">テキスト</a>
+                        <a href="{{ route('voice1')}}" class="mainnav_inside__link">テキスト</a>
+                        <a href="{{ route('voice2')}}" class="mainnav_inside__link">テキスト</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
         </div>
         <div class="midtext">
             <div class="midtext__p">岐阜県関市の包丁屋</div>
-            <div class="bottomtext2">私たちについて</div>
+            <div class="bottomtext2">研磨実績</div>
         </div>
         <div class="bottom_img"></div>
         <div class="social">

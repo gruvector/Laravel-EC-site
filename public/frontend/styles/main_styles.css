@@ -1053,7 +1053,6 @@ img.table_content_img {
 
 .worry {
     margin-top: 7rem;
-
 }
 
 .worry_part {
@@ -1251,3 +1250,32 @@ img.table_content_img {
 }
 /* EC CSS End */
 /* EC Introduction CSS End */
+
+/* Clients voice 1 CSS start */
+
+
+
+/* Clients voice 1 CSS End */
+
+
+/* Clients voice 2 CSS Start */
+.voice2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: .87rem;
+}
+.voice2_head {
+    font-size: 3rem;
+    font-weight: 600;
+    max-width: 87rem;
+    width: 100%;
+    text-align: center;
+}
+.voice2_date {
+    display: flex;
+    flex-direction: row;
+    margin-left: ;  
+}
+/* Clients voice 2 CSS End */

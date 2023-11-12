@@ -26,8 +26,8 @@
                         <a href="{{ route('intro') }}" class="mainnav_inside__link">テキスト</a>
                         <a href="{{ route('condition') }}" class="mainnav_inside__link">テキスト</a>
                         <a href="{{ route('EC-intro')}}" class="mainnav_inside__link">テキスト</a>
-                        <a href="#" class="mainnav_inside__link">テキスト</a>
-                        <a href="#" class="mainnav_inside__link">テキスト</a>
+                        <a href="{{ route('voice1')}}" class="mainnav_inside__link">テキスト</a>
+                        <a href="{{ route('voice2')}}" class="mainnav_inside__link">テキスト</a>
                     </div>
                 </div>
             </div>
@@ -163,7 +163,7 @@
 
 <div class="merchandise">
     <div class="point3_header">
-        <div class="point3_header1">merchandise</div>
+        <div class="point3_header1">MERCHANDISE</div>
         <div class="point3_header2">商品紹介一覧</div>
         <div class="point3_body_text">LOGOでは、さまざまな商品をご提供しています。</div>
         <div class="bef_aft3__btngrp">

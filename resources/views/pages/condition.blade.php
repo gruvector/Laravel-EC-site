@@ -25,8 +25,8 @@
                         <a href="{{ route('intro') }}" class="mainnav_inside__link">テキスト</a>
                         <a href="{{ route('condition') }}" class="mainnav_inside__link">テキスト</a>
                         <a href="{{ route('EC-intro')}}" class="mainnav_inside__link">テキスト</a>
-                        <a href="#" class="mainnav_inside__link">テキスト</a>
-                        <a href="#" class="mainnav_inside__link">テキスト</a>
+                        <a href="{{ route('voice1')}}" class="mainnav_inside__link">テキスト</a>
+                        <a href="{{ route('voice2')}}" class="mainnav_inside__link">テキスト</a>
                     </div>
                 </div>
             </div>
