@@ -248,6 +248,7 @@ h6::selection {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    border: none;
 }
 .topnav {
     width: 100%;
@@ -489,6 +490,9 @@ h6::selection {
     letter-spacing: 1px;
     margin: 2px auto;
     transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .custom_topics_btn__button span {
     cursor: pointer;
@@ -1263,8 +1267,8 @@ img.table_content_img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 0.87rem;
     align-items: center;
-    margin-top: .87rem;
 }
 .voice2_head {
     font-size: 3rem;
@@ -1276,6 +1280,158 @@ img.table_content_img {
 .voice2_date {
     display: flex;
     flex-direction: row;
-    margin-left: ;  
+    margin-left: calc(25vw);  
+    width: 100%;
+    margin-top: 4.2rem;
+}
+.voice2_date__btn {
+    width: 11rem;
+    height: 3.3rem;
+    border-radius: 1.6rem;
+    background-color: #FFD776;
+    font-size: 1.8rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.voice2_date__btntext {
+    margin-left: 2.5rem;
+    margin-right: 5.5rem;
+    font-size: 2rem;
+}
+.voice2_part {
+    max-width: calc(50vw);
+    width: 95%;
+    margin-top: 4.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.voice2_photo {
+    width: 100%;
+}
+.voice2_photo img {
+    width: 100%;
+}
+.voice2_text1 {
+    width: 100%;
+    font-size: 1.8rem;
+    margin-top: 5rem;
+}
+.voice2_text2 {
+    display: flex;
+    align-items: center;
+    background-color: #FFF2D1;
+    border-radius: 0 20px 20px 0;
+    border-left: 9px solid  #E5AC22;
+    margin-top: 3.7rem;
+    height: 10rem;
+}
+.voice2_text2__text {
+    font-size: 2.2rem;
+    margin-left: 3rem;
+}
+.workphoto {
+    background-image: url("../../assets/img/Group_11514.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 6.6rem;
+    padding-bottom: 11.3rem;
+}
+.workphoto_head {
+    margin-left: calc(25vw);
+    font-size: 2rem;
+}
+.workphoto_photo {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    column-gap: 6rem;
+    row-gap: 7rem;
+    margin-top: 3.7rem;
+}
+.workphoto_photo1 {
+    display: flex;
+    justify-content: flex-end;
 }
 /* Clients voice 2 CSS End */
+
+/* Q&A CSS Start */
+
+.qainput {
+    max-width: calc(73vw);
+    width: 100%;
+    margin: 5rem auto 0 auto;
+}
+.qainput_nppe {
+    display: flex;
+    flex-direction: column;
+}
+.input_need {
+    color: red;
+    font-size: 1.8rem;
+}
+.qainput__label {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: black;
+    margin-top: 2.7rem;
+}
+.qainput__input1 {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 13px 0 11px 27px;
+    background-color: #EFEEE8;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+}
+.qainput__input2_1 {
+    font-size: 1.6rem;
+    padding: 13px 0 11px 27px;
+    background-color: #EFEEE8;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    width: 12.6rem;
+    margin-bottom: 1.5rem;
+}
+.qainput_zip_part {
+    display: flex;  
+    width: 100%;
+}
+.qainput__select1 {
+    font-size: 1.6rem;
+    padding: 13px 0 11px 27px;
+    background-color: #EFEEE8;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    width: 18%;
+    margin-right: 2rem;
+}
+.qainput__input2_3 {
+    font-size: 1.6rem;
+    padding: 13px 0 11px 27px;
+    background-color: #EFEEE8;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    width: 25%;
+    margin-right: 2rem;
+}
+.qainput__input2_4 {
+    font-size: 1.6rem;
+    padding: 13px 0 11px 27px;
+    background-color: #EFEEE8;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    width: 55%;
+}
+.qainput_radio {
+    font-size: 1.6rem;
+}
+.qainput__radio {
+    margin-left: 5rem;
+}
+.qainput_radio:first {
+    margin-left: 0;
+}
+/* Q&A CSS End */

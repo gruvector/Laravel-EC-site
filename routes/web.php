@@ -257,6 +257,8 @@ Route::view('/home', 'pages.index')->name('home');
 Route::view('/EC-intro', 'pages.EC_Introduction')->name('EC-intro');
 Route::view('/voice1', 'pages.clients_voice1')->name('voice1');
 Route::view('/voice2', 'pages.clients_voice2')->name('voice2');
+Route::view('/Q&A', 'pages.que_ans')->name('QA');
+
 
 
 

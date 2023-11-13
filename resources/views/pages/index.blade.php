@@ -380,7 +380,7 @@
             </div>
         </div>
         <div class="comparison_btn__div">
-            <button class="custom_topics_btn__button"><span>もっと詳しく見る&nbsp;</span></button>
+            <a href="{{ route('QA') }}" class="custom_topics_btn__button"><span>もっと詳しく見る&nbsp;</span></a>
         </div>
     </div>
 

@@ -61,7 +61,7 @@
         </div>
         <div class="midtext">
             <div class="midtext__p">岐阜県関市の包丁屋</div>
-            <div class="bottomtext2">研ぎの事例紹介</div>
+            <div class="bottomtext2">研磨実績</div>
         </div>
         <div class="bottom_img"></div>
         <div class="social">
@@ -82,30 +82,37 @@
     </div>
     <div class="voice2_date">
         <div class="voice2_date__btn">
-            
+            日付
         </div>
         <div class="voice2_date__btntext">
-
+            2023.10.20
         </div>
         <div class="voice2_date__btn">
-
+            カテゴリー
         </div>
         <div class="voice2_date__btntext">
-
+            クリーニング
         </div>
     </div>
     <div class="voice2_part">
         <div class="voice2_photo">
-
+            <img src="{{"assets/img/4191365_m.png"}}" alt="">
         </div>
         <div class="voice2_text1">
-
+            購入した包丁がガタマスカス鋼でしたので、自分で研ぐと模様が消えて
+            しまうかも…と思い、研ぎ直しをお願いしました。帰ってきた包丁はまるで新品で、
+            作る料理もまた元のように美味しくなった気がします。
         </div>
         <div class="voice2_text2">
-            
+            <div class="voice2_text2__text">
+                ここに施工実績タイトルが入ります。ここに施工実績タイト<br />
+                ルが入ります。ここに施工実績タイトルが入ります
+            </div>
         </div>
         <div class="voice2_text1">
-
+            購入した包丁がガタマスカス鋼でしたので、自分で研ぐと模様が消えて
+            しまうかも…と思い、研ぎ直しをお願いしました。帰ってきた包丁はまるで新品で、
+            作る料理もまた元のように美味しくなった気がします。
         </div>
     </div>
 </div>
@@ -115,7 +122,15 @@
 {{-- working_photo Start --}}
 
 <div class="workphoto">
-    
+    <div class="workphoto_head">
+        施工写真
+    </div>
+    <div class="workphoto_photo">
+        <div class="workphoto_photo1"><img src="{{"assets/img/Group_11510.png"}}" alt=""></div>
+        <div class="workphoto_photo2"><img src="{{"assets/img/Group_11512.png"}}" alt=""></div>
+        <div class="workphoto_photo1"><img src="{{"assets/img/Group_11513.png"}}" alt=""></div>
+        <div class="workphoto_photo2"><img src="{{"assets/img/Group_11511.png"}}" alt=""></div>
+    </div>
 </div>
 
 {{-- working_photo End --}}
