@@ -70,7 +70,7 @@ Route::get('/dashboard', [MainUserController::class, 'UserProfile'])->name('user
 Route::get('/user/dashboard/edit', [MainUserController::class, 'UserProfileEdit'])->name('profile.edit');
 Route::post('/user/profile/store', [MainUserController::class, 'UserProfileStore'])->name('profile.store');
 Route::get('/user/dashboard/password/edit', [MainUserController::class, 'UserPasswordEdit'])->name('user.password.edit');
-Route::post('/user/password/update', [MainUserController::class, 'UserPasswordUpdate'])->name('password.update');
+// Route::post('/user/password/update', [MainUserController::class, 'UserPasswordUpdate'])->name('password.update');
 
 // All Category Route
 Route::get('/admin/categories', [CategoryController::class, 'index'])->name('categories');
@@ -257,7 +257,7 @@ Route::view('/home', 'pages.index')->name('home');
 Route::view('/EC-intro', 'pages.EC_Introduction')->name('EC-intro');
 Route::view('/voice1', 'pages.clients_voice1')->name('voice1');
 Route::view('/voice2', 'pages.clients_voice2')->name('voice2');
-Route::view('/Q&A', 'pages.que_ans')->name('QA');
+Route::view('/Q&A', 'pages.que_ans')->name('Q&A');
 
 
 

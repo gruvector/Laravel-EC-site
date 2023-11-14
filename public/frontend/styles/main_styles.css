@@ -1031,7 +1031,7 @@ img.table_content_img {
     align-items: center;
     justify-content: center;
     border: 1px solid #e5ac20;
-    
+
 }
 .before3_btn:active {
     background-color: #e5ac20;
@@ -1069,7 +1069,7 @@ img.table_content_img {
     max-width: 61rem;
     width: 95%;
     background-image: url("../../assets/img/Union_4.png");
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
@@ -1077,12 +1077,12 @@ img.table_content_img {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .worry_part__partimg {
     max-width: calc(50vw);
-    width:100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1250,7 +1250,7 @@ img.table_content_img {
     text-align: center;
 }
 .ec_part__text {
-     font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 /* EC CSS End */
 /* EC Introduction CSS End */
@@ -1280,7 +1280,7 @@ img.table_content_img {
 .voice2_date {
     display: flex;
     flex-direction: row;
-    margin-left: calc(25vw);  
+    margin-left: calc(25vw);
     width: 100%;
     margin-top: 4.2rem;
 }
@@ -1288,7 +1288,7 @@ img.table_content_img {
     width: 11rem;
     height: 3.3rem;
     border-radius: 1.6rem;
-    background-color: #FFD776;
+    background-color: #ffd776;
     font-size: 1.8rem;
     justify-content: center;
     display: flex;
@@ -1321,9 +1321,9 @@ img.table_content_img {
 .voice2_text2 {
     display: flex;
     align-items: center;
-    background-color: #FFF2D1;
+    background-color: #fff2d1;
     border-radius: 0 20px 20px 0;
-    border-left: 9px solid  #E5AC22;
+    border-left: 9px solid #e5ac22;
     margin-top: 3.7rem;
     height: 10rem;
 }
@@ -1363,6 +1363,7 @@ img.table_content_img {
     max-width: calc(73vw);
     width: 100%;
     margin: 5rem auto 0 auto;
+    font-size: 2rem;
 }
 .qainput_nppe {
     display: flex;
@@ -1382,28 +1383,28 @@ img.table_content_img {
     width: 100%;
     font-size: 1.6rem;
     padding: 13px 0 11px 27px;
-    background-color: #EFEEE8;
-    border: 1px solid #C1C1C1;
+    background-color: #efeee8;
+    border: 1px solid #c1c1c1;
     border-radius: 5px;
 }
 .qainput__input2_1 {
     font-size: 1.6rem;
     padding: 13px 0 11px 27px;
-    background-color: #EFEEE8;
-    border: 1px solid #C1C1C1;
+    background-color: #efeee8;
+    border: 1px solid #c1c1c1;
     border-radius: 5px;
     width: 12.6rem;
     margin-bottom: 1.5rem;
 }
 .qainput_zip_part {
-    display: flex;  
+    display: flex;
     width: 100%;
 }
 .qainput__select1 {
     font-size: 1.6rem;
     padding: 13px 0 11px 27px;
-    background-color: #EFEEE8;
-    border: 1px solid #C1C1C1;
+    background-color: #efeee8;
+    border: 1px solid #c1c1c1;
     border-radius: 5px;
     width: 18%;
     margin-right: 2rem;
@@ -1411,8 +1412,8 @@ img.table_content_img {
 .qainput__input2_3 {
     font-size: 1.6rem;
     padding: 13px 0 11px 27px;
-    background-color: #EFEEE8;
-    border: 1px solid #C1C1C1;
+    background-color: #efeee8;
+    border: 1px solid #c1c1c1;
     border-radius: 5px;
     width: 25%;
     margin-right: 2rem;
@@ -1420,18 +1421,116 @@ img.table_content_img {
 .qainput__input2_4 {
     font-size: 1.6rem;
     padding: 13px 0 11px 27px;
-    background-color: #EFEEE8;
-    border: 1px solid #C1C1C1;
+    background-color: #efeee8;
+    border: 1px solid #c1c1c1;
     border-radius: 5px;
     width: 55%;
 }
-.qainput_radio {
+.qainput_radiogrp {
+    display: flex;
+    align-items: center;
     font-size: 1.6rem;
 }
 .qainput__radio {
     margin-left: 5rem;
+    margin-right: 6px;
+    accent-color: #e5ac22;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
 }
-.qainput_radio:first {
-    margin-left: 0;
+.qainput__radio_first {
+    margin-left: 5px;
+    margin-right: 6px;
+    accent-color: #e5ac22;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+}
+.qainput__select2 {
+    font-size: 1.6rem;
+    padding: 13px 0 11px 27px;
+    background-color: #efeee8;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    width: 100%;
+    margin-right: 2rem;
+}
+.qainput__textfield {
+    font-size: 1.6rem;
+    padding: 13px 0 11px 27px;
+    background-color: #efeee8;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    width: 100%;
+}
+.qainput_prnprotect {
+    margin-top: 9rem;
+    width: 100%;
+    height: 13.5rem;
+    font-size: 1.6rem;
+    padding: 13px 0 11px 27px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qainput_checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 4.3rem;
 }
 /* Q&A CSS End */
+.qaoutput {
+    max-width: calc(73vw);
+    width: 100%;
+    margin: 11.3rem auto 0 auto;
+
+}
+.qaoutput_item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border: 1px solid #e5ac22;
+    border-radius: 0.8rem;
+}
+.qaoutput_img {
+    position: absolute;
+    top: -1px;
+    left: -1rem;
+}
+.qaout_text {
+    font-size: 2rem;
+    padding: 1.6rem 0;
+    text-align: center;
+}
+.qaout_btn {
+    float: right;
+}
+.qaoutput_type {
+    margin-top: 3.8rem;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.qaoutput_type__dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e5ac23;
+    display: inline-block   ;
+}
+.qaoutput_box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.qaout_btn {
+    justify-self: flex-end;
+    padding-top: 2.5rem;
+}
