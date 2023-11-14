@@ -72,7 +72,8 @@
             
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
     <script src="frontend/styles/bootstrap4/popper.js"></script>
-    <script src="frontend/styles/bootstrap4/bootstrap.min.js"></script>
+    {{-- <script src="frontend/styles/bootstrap4/bootstrap.min.js"></script> --}}
+    <script src="frontend/styles/bootstrap4/bootstrap.bundle.min.js"></script>
     <script src="frontend/plugins/greensock/TweenMax.min.js"></script>
     <script src="frontend/plugins/greensock/TimelineMax.min.js"></script>
     <script src="frontend/plugins/scrollmagic/ScrollMagic.min.js"></script>

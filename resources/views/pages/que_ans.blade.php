@@ -145,20 +145,103 @@
         <div class="qaoutput_type">
             <div class="qaoutput_type__dot"></div> 包丁について
         </div>
-        <div>
-            <div class="qaoutput_item">
-                <div class="qaoutput_img">
-                    <img src="{{ 'assets/img/Group_11462.png' }}">
-                </div>
-                <div class="qaoutput_box">
-                    <div class="qaout_text">ステンレス製など、どのような包丁でも修理可能ですか？</div>
-                    <div class="qaout_btn">
-                        <img src="{{'assets/img/Path_26116.png'}}">
+        <div id="accordion">
+            <div class="card no-border" >
+                <div class="card-header qaoutput_item">
+                    <a class="card-link qaoutput_link" data-toggle="collapse" href="#collapseOne">
+                        ステンレス製など、どのような包丁でも修理可能ですか？
+                    </a>
+                    <div class="qaoutput_img1">
+                        <img src="{{"assets/img/Group_11462.png"}}" alt="">
                     </div>
                 </div>
-            </div>  
-
-        </div>
+                <div id="collapseOne" class="collapse show qaoutput_body" data-parent="#accordion">
+                    <div class="card-body">
+                        特殊な包丁（セラミック製や、パン切など）以外は、三徳包丁、牛刀、出刃包丁、柳刃包丁、ペテ
+                        ィナイフ、中華包丁など、ほぼすべての包丁が修理可能です。                    
+                    </div>
+                    <div class="qaoutput_img2">
+                        <img src="{{"assets/img/Group_11524.png"}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card no-border">
+                <div class="card-header qaoutput_item">
+                    <a class="collapsed card-link qaoutput_link" data-toggle="collapse" href="#collapseTwo">
+                        ステンレス製など、どのような包丁でも修理可能ですか？
+                    </a>
+                    <div class="qaoutput_img1">
+                        <img src="{{"assets/img/Group_11462.png"}}" alt="">
+                    </div>
+                </div>
+                <div id="collapseTwo" class="collapse qaoutput_body" data-parent="#accordion">
+                    <div class="card-body">
+                        特殊な包丁（セラミック製や、パン切など）以外は、三徳包丁、牛刀、出刃包丁、柳刃包丁、ペテ
+                        ィナイフ、中華包丁など、ほぼすべての包丁が修理可能です。                    
+                    </div>
+                    <div class="qaoutput_img2">
+                        <img src="{{"assets/img/Group_11524.png"}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card no-border">
+                <div class="card-header qaoutput_item">
+                    <a class="collapsed card-link qaoutput_link" data-toggle="collapse" href="#collapseThree">
+                        ステンレス製など、どのような包丁でも修理可能ですか？
+                    </a>
+                    <div class="qaoutput_img1">
+                        <img src="{{"assets/img/Group_11462.png"}}" alt="">
+                    </div>
+                </div>
+                <div id="collapseThree" class="collapse qaoutput_body" data-parent="#accordion">
+                    <div class="card-body">
+                        特殊な包丁（セラミック製や、パン切など）以外は、三徳包丁、牛刀、出刃包丁、柳刃包丁、ペテ
+                        ィナイフ、中華包丁など、ほぼすべての包丁が修理可能です。                    
+                    </div>
+                    <div class="qaoutput_img2">
+                        <img src="{{"assets/img/Group_11524.png"}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card no-border">
+                <div class="card-header qaoutput_item">
+                    <a class="collapsed card-link qaoutput_link" data-toggle="collapse" href="#collapseFour">
+                        ステンレス製など、どのような包丁でも修理可能ですか？
+                    </a>
+                    <div class="qaoutput_img1">
+                        <img src="{{"assets/img/Group_11462.png"}}" alt="">
+                    </div>
+                </div>
+                <div id="collapseFour" class="collapse qaoutput_body" data-parent="#accordion">
+                    <div class="card-body">
+                        特殊な包丁（セラミック製や、パン切など）以外は、三徳包丁、牛刀、出刃包丁、柳刃包丁、ペテ
+                        ィナイフ、中華包丁など、ほぼすべての包丁が修理可能です。                    
+                    </div>
+                    <div class="qaoutput_img2">
+                        <img src="{{"assets/img/Group_11524.png"}}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card no-border">
+                <div class="card-header qaoutput_item">
+                    <a class="collapsed card-link qaoutput_link" data-toggle="collapse" href="#collapseFive">
+                        ステンレス製など、どのような包丁でも修理可能ですか？
+                    </a>
+                    <div class="qaoutput_img1">
+                        <img src="{{"assets/img/Group_11462.png"}}" alt="">
+                    </div>
+                </div>
+                <div id="collapseFive" class="collapse qaoutput_body" data-parent="#accordion">
+                    <div class="card-body">
+                        特殊な包丁（セラミック製や、パン切など）以外は、三徳包丁、牛刀、出刃包丁、柳刃包丁、ペテ
+                        ィナイフ、中華包丁など、ほぼすべての包丁が修理可能です。                    
+                    </div>
+                    <div class="qaoutput_img2">
+                        <img src="{{"assets/img/Group_11524.png"}}" alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
     </div>
 
     {{--  Q & A End --}}
