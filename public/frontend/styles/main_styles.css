@@ -1757,6 +1757,29 @@ img.table_content_img {
 .cart-input__body {
     max-width: calc(70vw);
     width: 100%;
-    
+}
+.cart_show {
+    margin-bottom: 3.8rem;
+}
+.cart_show1 {
+
+    display: flex;
+
+}
+.cart_show__label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 3.4rem;
+}
+.cart_show__content {
+    font-size: 1.6rem;
+    margin-left: 2.5rem;
+    margin-right: 2rem;
+}
+.cart_final {
+    font-size: 1.8rem;
+    width: calc(30vw);
+    text-align: center;
+    margin: 0 auto;
 }
 /* Cart CSS End */

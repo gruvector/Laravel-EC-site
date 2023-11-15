@@ -90,15 +90,15 @@
                     <div class="qainput_radio">
                         <div class="qainput__label">オプション</div>
                         <div class="qainput_radiogrp">
-                            <input type="radio" class="qainput__radio_first cart_radio_option" name="cart_option" checked>追加しない
-                            <input type="radio" class="qainput__radio cart_radio_option" name="cart_option">追加する
+                            <input type="radio" class="qainput__radio_first" name="cart_option" value="追加しない" checked>追加しない
+                            <input type="radio" class="qainput__radio" name="cart_option" value="追加する">追加する
                         </div>
                     </div>
                     <div class="qainput_radio">
                         <div class="qainput__label">お申込方法</div>
                         <div class="qainput_radiogrp">
-                            <input type="radio" class="qainput__radio_first cart_radio_apply" name="cart_apply" checked>ゲストで申し込み
-                            <input type="radio" class="qainput__radio cart_radio_apply" name="cart_apply">会員登録して申し込む
+                            <input type="radio" class="qainput__radio_first" name="cart_apply" value="ゲストで申し込み" checked>ゲストで申し込み
+                            <input type="radio" class="qainput__radio" name="cart_apply" value="会員登録して申し込む">会員登録して申し込む
                         </div>
                     </div>
                     <div class="qainput_nppe">
@@ -111,11 +111,11 @@
                     </div>
                     <div class="qainput_nppe">
                         <div class="qainput__label">電話番号 <span class="input_need">※</span></div>
-                        <input type="tel" name="cart_tel" id="cart_tel" class="qainput__input1" placeholder="080-000-0000" />
+                        <input type="tel" name="cart_tel" id="cart_tel" class="qainput__input1" placeholder="080-000-0000" required/>
                     </div> 
                     <div class="qainput_nppe">
                         <div class="qainput__label">メールアドレス <span class="input_need">※</span></div>
-                        <input type="email" name="cart_email" id="cart_email" class="qainput__input1" placeholder="info@neopen.co.jp" />
+                        <input type="email" name="cart_email" id="cart_email" class="qainput__input1" placeholder="info@neopen.co.jp" required/>
                     </div>
                     <div class="qainput_nppe">
                         <div class="qainput__label">郵便番号</div>
@@ -135,9 +135,9 @@
                     <div class="qainput_radio">
                         <div class="qainput__label">ご希望の決済方法</div>
                         <div class="qainput_radiogrp">
-                            <input type="radio" class="qainput__radio_first cart_radio_pay" name="cart_payment" checked>コンビニ決済
-                            <input type="radio" class="qainput__radio cart_radio_pay" name="cart_payment">カード決済
-                            <input type="radio" class="qainput__radio cart_radio_pay" name="cart_payment">その他
+                            <input type="radio" class="qainput__radio_first cart_radio_pay" value="コンビニ決済" name="cart_payment" checked>コンビニ決済
+                            <input type="radio" class="qainput__radio cart_radio_pay" value="カード決済" name="cart_payment">カード決済
+                            <input type="radio" class="qainput__radio cart_radio_pay" value="その他" name="cart_payment">その他
                         </div>
                     </div>
                     <div class="qainput_prnprotect">個人情報保護方針記載する</div>
@@ -151,30 +151,57 @@
                 </div>
 
                 <div class="tab-pane" id="cart_personal_details" >
-                    <div class="qainput_radio">
-                        <div class="qainput__label">オプション</div>
-                        <div class="qainput_radiogrp" id="cart_personal_details__option"></div>
+                    <div class="cart_show">
+                        <div class="cart_show__label">オプション</div>
+                        <div class="cart_show__content" id="cart_personal_details__option"></div>
                     </div>
-                    
+                    <div class="cart_show">
+                        <div class="cart_show__label">お申込方法</div>
+                        <div class="cart_show__content" id="cart_personal_details__apply"></div>
+                    </div>
+                    <div class="cart_show">
+                        <div class="cart_show__label">お名前</div>
+                        <div class="cart_show__content" id="cart_personal_details__name"></div>
+                    </div>
+                    <div class="cart_show">
+                        <div class="cart_show__label">フリガナ</div>
+                        <div class="cart_show__content" id="cart_personal_details__pwd"></div>
+                    </div>
+                    <div class="cart_show">
+                        <div class="cart_show__label">電話番号</div>
+                        <div class="cart_show__content" id="cart_personal_details__tel"></div>
+                    </div>
+                    <div class="cart_show">
+                        <div class="cart_show__label">メールアドレス</div>
+                        <div class="cart_show__content" id="cart_personal_details__email"></div>
+                    </div>
+                    <div class="cart_show">
+                        <div class="cart_show__label">郵便番号</div>
+                        <div class="cart_show1">
+                            <div class="cart_show__content" id="cart_personal_details__zip"></div>
+                            <div class="cart_show__content" id="cart_personal_details__province"></div>
+                            <div class="cart_show__content" id="cart_personal_details__city"></div>
+                            <div class="cart_show__content" id="cart_personal_details__address"></div>
+                        </div>
+                    </div>
+                    <div class="cart_show">
+                        <div class="cart_show__label">ご希望の決済方法</div>
+                        <div class="cart_show1">
+                            <div class="cart_show__content" id="cart_personal_details__pay"></div>
+                            <div class="cart_show__content" id="cart_personal_details__url"></div>
+                        </div> 
+                    </div>
+                    <div class="cart_show1">
+                        <button type="button" name="btn_login_details" id="cart_btn_personal_details1" class="custom_topics_btn__button">前のページ</button>
+                        <button type="submit" name="btn_login_details" id="cart_btn_personal_details2" class="custom_topics_btn__button">完了する</button>
+                    </div>
                 </div>
 
-                <div class="tab-pane fade" id="cart_contact_details">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label>Enter Address</label>
-                                <textarea name="address" id="address" class="form-control"></textarea>
-                                <span id="cart_error_address" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                                <label>Enter Mobile No.</label>
-                                <input type="text" name="mobile_no" id="cart_mobile_no" class="form-control" />
-                                <span id="cart_error_mobile_no" class="text-danger"></span>
-                            </div>
-                            <div>
-                                <button type="button" name="btn_contact_details" id="cart_btn_contact_details" class="btn btn-success btn-lg">Register</button>
-                            </div>
-                        </div>
+                <div class="tab-pane" id="cart_contact_details">
+                    <div class="cart_final">
+                        ご購入いただきありがとうございます。<br />
+                        ご登録いただいた内容はご登録メールアドレスにお送り致します。<br />
+                        商品発送準備が出来次第再度ご連絡申し上げます。
                     </div>
                 </div>
             </div>
@@ -191,8 +218,19 @@
                 var error_pwd = $('#cart_pwd').val();
                 var error_email = $('#cart_email').val();
                 var error_tel = $('#cart_tel').val();
-                $('#cart_personal_details__option').text(error_name);
-
+                var error_option = $('input[name="cart_option"]:checked').val();
+                $('#cart_personal_details__option').text(error_option);
+                $('#cart_personal_details__apply').text($('input[name="cart_apply"]:checked').val());
+                $('#cart_personal_details__name').text(error_name);
+                $('#cart_personal_details__pwd').text(error_pwd);
+                $('#cart_personal_details__email').text(error_email);
+                $('#cart_personal_details__tel').text(error_tel);
+                $('#cart_personal_details__zip').text($('#cart_zip').val());
+                $('#cart_personal_details__province').text($('#cart_province').find(":selected").text());
+                $('#cart_personal_details__city').text($('#cart_city').val());
+                $('#cart_personal_details__address').text($('#cart_address').val());
+                $('#cart_personal_details__pay').text($('input[name="cart_payment"]:checked').val());
+                $('#cart_personal_details__url').text($('#cart_personal_details__zip').val());
 
                 if (error_name != '' && error_pwd != '' && error_email != '' && error_tel != '') {
                     $('#cart_login_details').removeClass('active');
@@ -200,122 +238,28 @@
                     $('#cart_list_personal_details').addClass('cart_active_tab1');
                     $('#cart_list_personal_details1').removeClass('cart_inactive_tab2');
                     $('#cart_list_personal_details1').addClass('cart_active_tab2');
-                    $('#cart_personal_details').addClass('active');
+                    $('#cart_personal_details').addClass('active in');
                 }
-                    
-                
             });
             
-            $('#cart_previous_btn_personal_details').click(function() {
+            $('#cart_btn_personal_details1').click(function() {
 
-
-                
                 $('#cart_list_personal_details').removeClass('active cart_active_tab1');
-                $('#cart_list_personal_details').removeAttr('href data-toggle');
                 $('#cart_personal_details').removeClass('active in');
                 $('#cart_list_personal_details').addClass('cart_inactive_tab1');
-                $('#cart_list_login_details').removeClass('cart_inactive_tab1');
-                $('#cart_list_login_details').addClass('cart_active_tab1 active');
-                $('#cart_list_login_details1').removeClass('cart_inactive_tab2');
-                $('#cart_list_login_details1').addClass('cart_active_tab2 active');
-                // $('#cart_list_login_details').attr('href', '#cart_login_details');
-                // $('#cart_list_login_details').attr('data-toggle', 'tab');
+                $('#cart_list_personal_details1').removeClass('cart_active_tab2');
+                $('#cart_list_personal_details1').addClass('cart_inactive_tab2');
                 $('#cart_login_details').addClass('active in');
             });
             
-            $('#cart_btn_personal_details').click(function() {
-                var error_first_name = '';
-                var error_last_name = '';
-                
-                if($.trim($('#cart_first_name').val()).length == 0) {
-                    error_first_name = 'First Name is required';
-                    $('#cart_error_first_name').text(error_first_name);
-                    $('#cart_first_name').addClass('cart_has-error');
-                }
-                else {
-                    error_first_name = '';
-                    $('#cart_error_first_name').text(error_first_name);
-                    $('#cart_first_name').removeClass('cart_has-error');
-                }
-                
-                if($.trim($('#cart_last_name').val()).length == 0) {
-                    error_last_name = 'Last Name is required';
-                    $('#cart_error_last_name').text(error_last_name);
-                    $('#cart_last_name').addClass('cart_has-error');
-                } else {
-                    error_last_name = '';
-                    $('#cart_error_last_name').text(error_last_name);
-                    $('#cart_last_name').removeClass('cart_has-error');
-                }
-    
-                if (error_first_name != '' || error_last_name != '') {
-                    return false;
-                } else {
-                    $('#cart_list_personal_details').removeClass('active cart_active_tab1');
-                    $('#cart_list_personal_details').removeAttr('href data-toggle');
-                    $('#cart_personal_details').removeClass('active');
-                    $('#cart_list_personal_details').addClass('cart_inactive_tab1');
-                    $('#cart_list_contact_details').removeClass('cart_inactive_tab1');
-                    $('#cart_list_contact_details').addClass('cart_active_tab1 active');
-                    $('#cart_list_login_details1').removeClass('cart_inactive_tab2');
-                    $('#cart_list_login_details1').addClass('cart_active_tab2 active');
-                    $('#cart_list_contact_details').attr('href', '#cart_contact_details');
-                    $('#cart_list_contact_details').attr('data-toggle', 'tab');
-                    $('#cart_contact_details').addClass('active in');
-                }
-            });
-            
-            $('#cart_previous_btn_contact_details').click(function() {
-                $('#cart_list_contact_details').removeClass('active cart_active_tab1');
-                $('#cart_list_contact_details').removeAttr('href data-toggle');
-                $('#cart_contact_details').removeClass('active in');
-                $('#cart_list_contact_details').addClass('cart_inactive_tab1');
-                $('#cart_list_personal_details').removeClass('cart_inactive_tab1');
-                $('#cart_list_personal_details').addClass('cart_active_tab1 active');
-                $('#cart_list_personal_details').attr('href', '#cart_personal_details');
-                $('#cart_list_personal_details').attr('data-toggle', 'tab');
-                $('#cart_personal_details').addClass('active in');
-            });
-            
-            $('#cart_btn_contact_details').click(function() {
-                var error_address = '';
-                var error_mobile_no = '';
-                var mobile_validation = /^\d{10}$/;
-                if($.trim($('#cart_address').val()).length == 0) {
-                    error_address = 'Address is required';
-                    $('#cart_error_address').text(error_address);
-                    $('#cart_address').addClass('cart_has-error');
-                } else {
-                    error_address = '';
-                    $('#cart_error_address').text(error_address);
-                    $('#cart_address').removeClass('cart_has-error');
-                }
-                
-                if($.trim($('#cart_mobile_no').val()).length == 0) {
-                    error_mobile_no = 'Mobile Number is required';
-                    $('#cart_error_mobile_no').text(error_mobile_no);
-                    $('#cart_mobile_no').addClass('cart_has-error');
-                } else {
-                    if (!mobile_validation.test($('#cart_mobile_no').val())) {
-                        error_mobile_no = 'Invalid Mobile Number';
-                        $('#cart_error_mobile_no').text(error_mobile_no);
-                        $('#cart_mobile_no').addClass('cart_has-error');
-                    } else {
-                        error_mobile_no = '';
-                        $('#cart_error_mobile_no').text(error_mobile_no);
-                        $('#cart_mobile_no').removeClass('cart_has-error');
-                    }
-                }
-                if(error_address != '' || error_mobile_no != '') {
-                    return false;
-                } else {
-                    $('#cart_btn_contact_details').attr("disabled", "disabled");
-                    $(document).css('cursor', 'prgress');
-                    $("#cart_register_form").submit();
-                }
-            
-            });
-        
+            $('#cart_btn_personal_details2').click(function() {
+                $('#cart_list_contact_details').removeClass('cart_inactive_tab1');
+                $('#cart_list_contact_details').addClass('cart_active_tab1 active');
+                $('#cart_list_contact_details1').removeClass('cart_inactive_tab2');
+                $('#cart_list_contact_details1').addClass('cart_active_tab2 active');
+                $('#cart_personal_details').removeClass('active in');
+                $('#cart_contact_details').addClass('active in');
+            });      
         });
         </script>
 
