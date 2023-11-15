@@ -63,11 +63,12 @@
             <div class="midtext__p">岐阜県関市の包丁屋</div>
             <div class="bottomtext2">研磨実績</div>
         </div>
-        <div class="bottom_img"></div>
+        
         <div class="social">
             
         </div>
     </div>
+    <div class="bottom_img1"></div>
 </div>
 
 {{-- Header End --}}

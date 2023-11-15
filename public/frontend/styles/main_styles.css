@@ -236,6 +236,7 @@ h6::selection {
 .nav {
     background-color: #efeee8;
     padding: 1.5rem 1.1rem;
+    padding-bottom: 0;
 }
 .nav_img {
     background-image: url("./../../assets/img/S0A0858.png");
@@ -249,6 +250,21 @@ h6::selection {
     justify-content: flex-start;
     flex-direction: column;
     border: none;
+    border-radius: 30px;
+}
+.nav_img1 {
+    background-image: url("./../../assets/img/S0A0858_1.png");
+    background-color: #efeee8;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: none;
+    border-radius: 30px;
 }
 .topnav {
     width: 100%;
@@ -374,6 +390,20 @@ h6::selection {
     position: absolute;
     bottom: 0;
 }
+.bottom_img1 {
+    background-image: linear-gradient(
+        rgba(239, 238, 232, 0),
+        rgba(239, 238, 232, 0.5),
+        rgba(239, 238, 232, 0.8),
+        rgba(239, 238, 232, 0.95),
+        rgba(256, 256, 232, 1),
+        rgba(256, 256, 256, 1)
+    );
+    width: 100%;
+    height: 6.2rem;
+    position: absolute;
+    bottom: 0;
+} 
 
 .custom_topics_com {
     width: 29rem;
@@ -1434,7 +1464,6 @@ img.table_content_img {
 .qainput__radio {
     margin-left: 5rem;
     margin-right: 6px;
-    accent-color: #e5ac22;
     padding: 4px;
     width: 20px;
     height: 20px;
@@ -1442,11 +1471,11 @@ img.table_content_img {
 .qainput__radio_first {
     margin-left: 5px;
     margin-right: 6px;
-    accent-color: #e5ac22;
     padding: 4px;
     width: 20px;
     height: 20px;
 }
+
 .qainput__select2 {
     font-size: 1.6rem;
     padding: 13px 0 11px 27px;
@@ -1488,7 +1517,7 @@ img.table_content_img {
 .qaoutput {
     max-width: calc(73vw);
     width: 100%;
-    margin: 11.3rem auto 0 auto;
+    margin: 11.3rem auto;
 
 }
 .qaoutput_item {
@@ -1559,3 +1588,107 @@ img.table_content_img {
     line-height: 3rem;
     letter-spacing: 3px;
 }
+
+/* Login Page CSS Start */
+.login_part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5.5rem;
+}
+.login_desc {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #EFEEE8;
+    border: none;
+    border-radius: 6rem;
+    width: calc(40vw);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+.login_desc0 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.login_desc1 {
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.login_desc1 > a {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.loginform {
+    max-width: 44rem;
+    width: 100%;
+    font-size: 1.4rem;
+}
+.loginform > label {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.login_user__input {
+    width: 100%;
+    font-size: 1.4rem;
+    padding-bottom: 1.4rem;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.login_user__input:focus {
+    outline: none;
+}
+.email_icon {
+    display: flex;
+    margin-bottom: 2.7rem;
+}
+.email_icon > img {
+    margin-left: -3rem;
+    height: auto;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    width: 2.5rem;
+}
+.login_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin-bottom: 2.8rem;
+}
+.login_bottom > a, .login_bottom > div {
+    font-size: 1.4rem;
+}
+.login_button {
+
+}
+/* Login Page CSS End */
+
+
+/* Cart CSS Start */
+
+.cart_box {
+    width:800px;
+    margin:0 auto;
+}
+.cart_active_tab1 {
+    background-color:#fff;
+    color:#333;
+    font-weight: 600;
+}
+.cart_inactive_tab1 {
+    background-color: #f5f5f5;
+    color: #333;
+    cursor: not-allowed;
+}
+.cart_has-error {
+    border-color:#cc0000;
+    background-color:#ffff99;
+}
+
+/* Cart CSS End */

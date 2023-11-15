@@ -110,50 +110,6 @@
 
     </script>
 
-    <script>
-        $(document).on("click", "#return", function(e) {
-            e.preventDefault();
-            var link = $(this).attr("href");
-            swal({
-                    title: "Are you Want to Return?",
-                    text: "Once Return, This will return your money!",
-                    icon: "warning",
-                    buttons: true,
-                    dangerMode: true,
-                })
-                .then((willDelete) => {
-                    if (willDelete) {
-                        window.location.href = link;
-                    } else {
-                        swal("Cancel!");
-                    }
-                });
-        });
-
-    </script>
-
-    <script>
-        $(document).on("click", "#cart_remove", function(e) {
-            e.preventDefault();
-            var link = $(this).attr("href");
-            swal({
-                    title: "Are you Want to Remove?",
-                    text: "Once Remove, This will no longer in your cart page!",
-                    icon: "warning",
-                    buttons: true,
-                    dangerMode: true,
-                })
-                .then((willDelete) => {
-                    if (willDelete) {
-                        window.location.href = link;
-                    } else {
-                        swal("Cancel!");
-                    }
-                });
-        });
-
-    </script>
-
 </body>
 
 </html>

@@ -61,11 +61,12 @@
                 <div class="midtext__p">岐阜県関市の包丁屋</div>
                 <div class="bottomtext2">お問い合わせ</div>
             </div>
-            <div class="bottom_img"></div>
+            
             <div class="social">
 
             </div>
         </div>
+        <div class="bottom_img1"></div>
     </div>
 
     {{-- Header End --}}
@@ -128,7 +129,7 @@
         </div>
         <div class="qainput_prnprotect">個人情報保護方針記載する</div>
         <div class="qainput_checkbox">
-            <input type="checkbox" name="" id=""> 上記内容に同意する
+            <input type="checkbox" name="" id=""> &nbsp;上記内容に同意する
         </div>
         <button type="submit" class="custom_topics_btn__button">送信する</button>
     </form>
@@ -139,7 +140,7 @@
 
     <div class="qaoutput">
         <div class="point3_header">
-            <div class="point3_header1">Q＆A</div>
+            <div class="point3_header1">Q ＆ A</div>
             <div class="point3_header2">よくあるご質問</div>
         </div>
         <div class="qaoutput_type">
@@ -241,7 +242,7 @@
                     </div>
                 </div>
             </div>
-          </div>
+        </div>
     </div>
 
     {{--  Q & A End --}}

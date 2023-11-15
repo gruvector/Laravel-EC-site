@@ -51,14 +51,14 @@
                 </div>
 
                 <div class="rightnav">
-                    <div class='loginNav'>
+                    <a class='loginNav' href="{{route('userlogin')}}">
                         <div class="loginNav_avartar">
                             <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
                         </div>
                         <div class="loginNav_text">
                             ログイン
                         </div>
-                    </div>
+                    </a>
                     <div class='loginNav'>
                         <div class="loginNav_avartar">
                             <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
