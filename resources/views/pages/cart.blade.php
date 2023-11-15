@@ -98,38 +98,85 @@
 
     {{-- Cart Part Start --}}
 
-    <div class="container cart_box">
+    <div class="cart_box">
         <form method="post" id="cart_register_form">
+            @csrf
             <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link cart_active_tab1" style="border:1px solid #ccc" id="cart_list_login_details">Login Details</a>
+                <li class="nav-item cart_box_li_first cart_active_tab1" id="cart_list_login_details">
+                    <div class="cart_active_tab2" id="cart_list_login_details1">STEP 1</div>詳細入力
+                    {{-- <a class="nav-link ">
+                    </a> --}}
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link cart_inactive_tab1" id="cart_list_personal_details" style="border:1px solid #ccc">Personal Details</a>
+                <li class="nav-item cart_box_li cart_inactive_tab1" id="cart_list_personal_details">
+                    <div class="cart_inactive_tab2" id="cart_list_login_details1">STEP 2</div>詳細確認
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link cart_inactive_tab1" id="cart_list_contact_details" style="border:1px solid #ccc">Contact Details</a>
+                <li class="nav-item cart_box_li cart_inactive_tab1" id="cart_list_contact_details">
+                    <div class="cart_inactive_tab2" id="cart_list_login_details1">STEP 3</div>完了
                 </li>
             </ul>
-            <div class="tab-content" style="margin-top:16px;">
+            <div class="tab-content cart-input__body">
                 <div class="tab-pane active" id="cart_login_details">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label>Enter Email Address</label>
-                                    <input type="text" name="email" id="cart_email" class="form-control" />
-                                <span id="cart_error_email" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                                <label>Enter Password</label>
-                                <input type="password" name="password" id="cart_password" class="form-control" />
-                                <span id="cart_error_password" class="text-danger"></span>
-                            </div>
-                            <div>
-                                <button type="button" name="btn_login_details" id="cart_btn_login_details" class="btn btn-info btn-lg">Next</button>
-                            </div>
+                    <div class="qainput_radio">
+                        <div class="qainput__label">オプション</div>
+                        <div class="qainput_radiogrp">
+                            <input type="radio" class="qainput__radio_first" name="cart_option" checked>追加しない
+                            <input type="radio" class="qainput__radio" name="cart_option">追加する
                         </div>
                     </div>
+                    <div class="qainput_radio">
+                        <div class="qainput__label">お申込方法</div>
+                        <div class="qainput_radiogrp">
+                            <input type="radio" class="qainput__radio_first" name="cart_apply" checked>ゲストで申し込み
+                            <input type="radio" class="qainput__radio" name="cart_apply">会員登録して申し込む
+                        </div>
+                    </div>
+                    <div class="qainput_nppe">
+                        <div class="qainput__label">お名前 <span class="input_need">※</span></div>
+                        <input type="text" name="cart_name" id="cart_name" class="qainput__input1" placeholder="NeoPen 太郎"/>
+                    </div>
+                    <div class="qainput_nppe">
+                        <div class="qainput__label">フリガナ <span class="input_need">※</span></div>
+                        <input type="password" name="cart_pwd" id="cart_pwd" class="qainput__input1" placeholder="ネオペン タロウ" />
+                    </div>
+                    <div class="qainput_nppe">
+                        <div class="qainput__label">電話番号 <span class="input_need">※</span></div>
+                        <input type="tel" name="cart_tel" id="cart_tel" class="qainput__input1" placeholder="080-000-0000" />
+                    </div> 
+                    <div class="qainput_nppe">
+                        <div class="qainput__label">メールアドレス <span class="input_need">※</span></div>
+                        <input type="email" name="cart_email" id="cart_email" class="qainput__input1" placeholder="info@neopen.co.jp" />
+                    </div>
+                    <div class="qainput_nppe">
+                        <div class="qainput__label">郵便番号</div>
+                        <input type="tel" class="qainput__input2_1" placeholder="460-0000" name="cart_zip" id="cart_zip"/>
+                        <div class="qainput_zip_part">
+                            <select class="qainput__select1" name="cart_province" id="cart_province">
+                                <option value="" disabled selected>都道府県</option>
+                                <option>都道府県</option>
+                                <option>都道府県</option>
+                                <option>都道府県</option>
+                                <option>都道府県</option>
+                            </select>
+                            <input type="text" class="qainput__input2_3" placeholder="市区町村" name="cart_city" id="cart_city">
+                            <input type="text" class="qainput__input2_4" placeholder="以降の住所(番地・建物名など)" name="cart_address" id="cart_address">
+                        </div>
+                    </div>
+                    <div class="qainput_radio">
+                        <div class="qainput__label">ご希望の決済方法</div>
+                        <div class="qainput_radiogrp">
+                            <input type="radio" class="qainput__radio_first" name="cart_payment" checked>コンビニ決済
+                            <input type="radio" class="qainput__radio" name="cart_payment">カード決済
+                            <input type="radio" class="qainput__radio" name="cart_payment">その他
+                        </div>
+                    </div>
+                    <div class="qainput_prnprotect">個人情報保護方針記載する</div>
+                    <div class="qainput_checkbox">
+                        <input type="checkbox" name="" id="cart_checkbox"> &nbsp;上記内容に同意する
+                    </div>
+                    <div>
+                        <button type="button" name="btn_login_details" id="cart_btn_login_details" class="custom_topics_btn__button">内容を確認する</button>
+                    </div>
+
                 </div>
                 <div class="tab-pane fade" id="cart_personal_details">
                     <div class="panel panel-default">
@@ -174,7 +221,6 @@
                                 <span id="cart_error_mobile_no" class="text-danger"></span>
                             </div>
                             <div>
-                                <button type="button" name="previous_btn_contact_details" id="cart_previous_btn_contact_details" class="btn btn-default btn-lg">Previous</button>
                                 <button type="button" name="btn_contact_details" id="cart_btn_contact_details" class="btn btn-success btn-lg">Register</button>
                             </div>
                         </div>
@@ -193,35 +239,19 @@
                 var error_email = '';
                 var error_password = '';
                 
-                if($.trim($('#cart_email').val()).length == 0) {
-                    error_email = 'Email is required';
-                    $('#cart_error_email').text(error_email);
-                    $('#cart_email').addClass('cart_has-error');
-                } 
                 
-                if($.trim($('#cart_password').val()).length == 0) {
-                    error_password = 'Password is required';
-                    $('#cart_error_password').text(error_password);
-                    $('#cart_password').addClass('cart_has-error');
-                } else {
-                    error_password = '';
-                    $('#cart_error_password').text(error_password);
-                    $('#cart_password').removeClass('cart_has-error');
-                }
-    
-                if(error_email != '' || error_password != '') {
-                    return false;  
-                } else {
-                    $('#cart_list_login_details').removeClass('active cart_active_tab1');
-                    $('#cart_list_login_details').removeAttr('href data-toggle');
+                    // $('#cart_list_login_details').removeClass('active cart_active_tab1');
+                    // $('#cart_list_login_details').removeAttr('href data-toggle');
                     $('#cart_login_details').removeClass('active');
                     $('#cart_list_login_details').addClass('cart_inactive_tab1');
                     $('#cart_list_personal_details').removeClass('cart_inactive_tab1');
                     $('#cart_list_personal_details').addClass('cart_active_tab1 active');
-                    $('#cart_list_personal_details').attr('href', '#cart_personal_details');
-                    $('#cart_list_personal_details').attr('data-toggle', 'tab');
+                    $('#cart_list_personal_details1').removeClass('cart_inactive_tab2');
+                    $('#cart_list_personal_details1').addClass('cart_active_tab2 active');
+                    // $('#cart_list_personal_details').attr('href', '#cart_personal_details');
+                    // $('#cart_list_personal_details').attr('data-toggle', 'tab');
                     $('#cart_personal_details').addClass('active in');
-                }
+                
             });
             
             $('#cart_previous_btn_personal_details').click(function() {
@@ -231,8 +261,10 @@
                 $('#cart_list_personal_details').addClass('cart_inactive_tab1');
                 $('#cart_list_login_details').removeClass('cart_inactive_tab1');
                 $('#cart_list_login_details').addClass('cart_active_tab1 active');
-                $('#cart_list_login_details').attr('href', '#cart_login_details');
-                $('#cart_list_login_details').attr('data-toggle', 'tab');
+                $('#cart_list_personal_details1').removeClass('cart_inactive_tab2');
+                $('#cart_list_personal_details1').addClass('cart_active_tab2 active');
+                // $('#cart_list_login_details').attr('href', '#cart_login_details');
+                // $('#cart_list_login_details').attr('data-toggle', 'tab');
                 $('#cart_login_details').addClass('active in');
             });
             
@@ -270,6 +302,8 @@
                     $('#cart_list_personal_details').addClass('cart_inactive_tab1');
                     $('#cart_list_contact_details').removeClass('cart_inactive_tab1');
                     $('#cart_list_contact_details').addClass('cart_active_tab1 active');
+                    $('#cart_list_personal_details1').removeClass('cart_inactive_tab2');
+                    $('#cart_list_personal_details1').addClass('cart_active_tab2 active');
                     $('#cart_list_contact_details').attr('href', '#cart_contact_details');
                     $('#cart_list_contact_details').attr('data-toggle', 'tab');
                     $('#cart_contact_details').addClass('active in');
