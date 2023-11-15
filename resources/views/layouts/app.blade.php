@@ -11,10 +11,8 @@
 
     <link rel="stylesheet" type="text/css" href="frontend/styles/bootstrap4/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="frontend/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="frontend/styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="frontend/styles/responsive.css">
 
     <!-- Toastr css -->
     <script src="https://js.stripe.com/v3/"></script>
@@ -74,16 +72,10 @@
     <script src="frontend/styles/bootstrap4/popper.js"></script>
     {{-- <script src="frontend/styles/bootstrap4/bootstrap.min.js"></script> --}}
     <script src="frontend/styles/bootstrap4/bootstrap.bundle.min.js"></script>
-    <script src="frontend/plugins/greensock/TweenMax.min.js"></script>
-    <script src="frontend/plugins/greensock/TimelineMax.min.js"></script>
-    <script src="frontend/plugins/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="frontend/plugins/greensock/animation.gsap.min.js"></script>
-    <script src="frontend/plugins/greensock/ScrollToPlugin.min.js"></script>
+ 
     <script src="frontend/plugins/slick180/slick.js"></script>
     <script src="frontend/plugins/easing/easing.js"></script>
-    <script src="frontend/js/custom.js"></script>
-    <script src="frontend/js/product_custom.js"></script>
-    <script src="frontend/js/cart_custom.js"></script>
+
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
