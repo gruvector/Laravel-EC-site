@@ -42,22 +42,22 @@
                             ログイン
                         </div>
                     </a>
-                    <div class='loginNav'>
+                    <a class='loginNav' href="{{route('cart')}}">
                         <div class="loginNav_avartar">
                             <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
                         </div>
                         <div class="loginNav_text">
                             カート
                         </div>
-                    </div>
-                    <div class='basketNav'>
+                    </a>
+                    <a class='basketNav'>
                         <div class="basketNav_avartar">
                             <img src={{ 'assets/img/Path_26070.png' }} alt="basketNavAvartar" class="basketNav_img" />
                         </div>
                         <div class="basketNav_text">
                             ご注文はこちら
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -70,13 +70,15 @@
     {{-- Cart Part Start --}}
 
     <div class="cart_box">
+        <div class="point3_header">
+            <div class="point3_header1">CART</div>
+            <div class="point3_header2">買い物かご</div>
+        </div>
         <form method="post" id="cart_register_form" action="">
             @csrf
             <ul class="nav nav-tabs">
                 <li class="nav-item cart_box_li_first cart_active_tab1" id="cart_list_login_details">
                     <div class="cart_active_tab2" id="cart_list_login_details1">STEP 1</div>詳細入力
-                    {{-- <a class="nav-link ">
-                    </a> --}}
                 </li>
                 <li class="nav-item cart_box_li cart_inactive_tab1" id="cart_list_personal_details">
                     <div class="cart_inactive_tab2" id="cart_list_personal_details1">STEP 2</div>詳細確認
@@ -91,8 +93,27 @@
                     「入力内容を確認して送信」ボタンを押してください。<br />
                     「※」は必須項目です。
                 </div>
+                <div class="cart_price_custom">
+                    <div class="cart_price_custom_ribbon">
+                        <img src="{{'assets/img/Group_11462 (2).png'}}" alt="">
+                    </div>
+                    <div class="cart_price_custom_text1">まずはお試しの一本から</div>
+                    <div class="cart_price_custom_text5">---------</div>
+                    <span class="cart_price_custom_text2">2780</span>
+                    <div class="cart_price_custom_text3">円</div> 
+                    <div class="cart_price_custom_text4">送料無料</div>
+                </div>
                 <div class="cart_price_user">
-                    
+                    <div class="cart_price_custom_ribbon">
+                        <img src="{{'assets/img/Group 11575.png'}}" alt="">
+                    </div>
+                    <div class="cart_price_user_text1">2,780</div>
+                    <div class="cart_price_user_text2">円</div>
+                    <div class="cart_price_user_arrow">
+                        <img src="{{'assets/img/Group 11662.png'}}" alt="">
+                    </div>
+                    <div class="cart_price_user_text1">2,650</div>
+                    <div class="cart_price_user_text2">円</div>
                 </div>
             </div>
             <div class="tab-content cart-input__body">
@@ -213,7 +234,7 @@
                         ご登録いただいた内容はご登録メールアドレスにお送り致します。<br />
                         商品発送準備が出来次第再度ご連絡申し上げます。
                     </div>
-                    div.
+                    
                 </div>
             </div>
         </form>
@@ -267,6 +288,7 @@
             });
             
             $('#cart_btn_personal_details2').click(function() {
+                $('div.cart_price_image').hide();
                 $('#cart_list_contact_details').removeClass('cart_inactive_tab1');
                 $('#cart_list_contact_details').addClass('cart_active_tab1 active');
                 $('#cart_list_contact_details1').removeClass('cart_inactive_tab2');

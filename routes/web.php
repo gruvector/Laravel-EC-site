@@ -260,6 +260,7 @@ Route::view('/voice2', 'pages.clients_voice2')->name('voice2');
 Route::view('/QA', 'pages.que_ans')->name('QA');
 Route::view('/userlogin', 'pages.userlogin')->name('userlogin');
 Route::view('/cart', 'pages.cart')->name('cart');
+Route::view('/order', 'pages.order')->name('order');
 
 
 

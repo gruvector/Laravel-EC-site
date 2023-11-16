@@ -67,14 +67,14 @@
                             カート
                         </div>
                     </a>
-                    <div class='basketNav'>
+                    <a class='basketNav'>
                         <div class="basketNav_avartar">
                             <img src={{ 'assets/img/Path_26070.png' }} alt="basketNavAvartar" class="basketNav_img" />
                         </div>
                         <div class="basketNav_text">
                             ご注文はこちら
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="midtext">

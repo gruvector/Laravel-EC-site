@@ -26,9 +26,9 @@
                             <a href="{{ route('home') }}" class="mainnav_inside__link">HOME </a>
                             <a href="{{ route('intro') }}" class="mainnav_inside__link">テキスト</a>
                             <a href="{{ route('condition') }}" class="mainnav_inside__link">テキスト</a>
-                            <a href="{{ route('EC-intro')}}" class="mainnav_inside__link">テキスト</a>
-                            <a href="{{ route('voice1')}}" class="mainnav_inside__link">テキスト</a>
-                            <a href="{{ route('voice2')}}" class="mainnav_inside__link">テキスト</a>
+                            <a href="{{ route('EC-intro') }}" class="mainnav_inside__link">テキスト</a>
+                            <a href="{{ route('voice1') }}" class="mainnav_inside__link">テキスト</a>
+                            <a href="{{ route('voice2') }}" class="mainnav_inside__link">テキスト</a>
                         </div>
                     </div>
                 </div>
@@ -42,22 +42,22 @@
                             ログイン
                         </div>
                     </a>
-                    <div class='loginNav'>
+                    <a class='loginNav' href="{{route('cart')}}">
                         <div class="loginNav_avartar">
                             <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
                         </div>
                         <div class="loginNav_text">
                             カート
                         </div>
-                    </div>
-                    <div class='basketNav'>
+                    </a>
+                    <a class='basketNav'>
                         <div class="basketNav_avartar">
                             <img src={{ 'assets/img/Path_26070.png' }} alt="basketNavAvartar" class="basketNav_img" />
                         </div>
                         <div class="basketNav_text">
                             ご注文はこちら
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

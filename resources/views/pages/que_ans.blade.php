@@ -31,30 +31,30 @@
                 </div>
                 <div></div>
                 <div class="rightnav">
-                    <div class='loginNav'>
+                    <a class='loginNav' href="{{route('userlogin')}}">
                         <div class="loginNav_avartar">
                             <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
                         </div>
                         <div class="loginNav_text">
                             ログイン
                         </div>
-                    </div>
-                    <div class='loginNav'>
+                    </a>
+                    <a class='loginNav' href="{{route('cart')}}">
                         <div class="loginNav_avartar">
                             <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
                         </div>
                         <div class="loginNav_text">
                             カート
                         </div>
-                    </div>
-                    <div class='basketNav'>
+                    </a>
+                    <a class='basketNav'>
                         <div class="basketNav_avartar">
                             <img src={{ 'assets/img/Path_26070.png' }} alt="basketNavAvartar" class="basketNav_img" />
                         </div>
                         <div class="basketNav_text">
                             ご注文はこちら
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="midtext">
