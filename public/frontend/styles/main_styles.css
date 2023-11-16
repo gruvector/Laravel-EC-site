@@ -1511,8 +1511,10 @@ img.table_content_img {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    font-size: 1.6rem;
     margin-bottom: 4.3rem;
+}
+.qainput_checkbox > label{
+    font-size: 1.4rem;
 }
 /* Q&A CSS End */
 .qaoutput {
@@ -1778,8 +1780,17 @@ img.table_content_img {
 }
 .cart_final {
     font-size: 1.8rem;
-    width: calc(30vw);
+    width: calc(40vw);
     text-align: center;
     margin: 0 auto;
+}
+.cart_price_image {
+    width: calc(54vw);
+    margin-top: 4.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* Cart CSS End */

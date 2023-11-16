@@ -70,7 +70,7 @@
     {{-- Cart Part Start --}}
 
     <div class="cart_box">
-        <form method="post" id="cart_register_form">
+        <form method="post" id="cart_register_form" action="">
             @csrf
             <ul class="nav nav-tabs">
                 <li class="nav-item cart_box_li_first cart_active_tab1" id="cart_list_login_details">
@@ -85,6 +85,16 @@
                     <div class="cart_inactive_tab2" id="cart_list_contact_details1">STEP 3</div>完了
                 </li>
             </ul>
+            <div class="cart_price_image">
+                <div class="cart_final">
+                    下記フォームに必要事項ををご記入の上、<br />
+                    「入力内容を確認して送信」ボタンを押してください。<br />
+                    「※」は必須項目です。
+                </div>
+                <div class="cart_price_user">
+                    
+                </div>
+            </div>
             <div class="tab-content cart-input__body">
                 <div class="tab-pane active" id="cart_login_details">
                     <div class="qainput_radio">
@@ -142,7 +152,7 @@
                     </div>
                     <div class="qainput_prnprotect">個人情報保護方針記載する</div>
                     <div class="qainput_checkbox">
-                        <input type="checkbox" name="" id="cart_checkbox"> &nbsp;上記内容に同意する
+                        <input type="checkbox" name="cart_checkbox" id="cart_checkbox"> &nbsp;<label for="cart_checkbox">上記内容に同意する</label>
                     </div>
                     <div>
                         <button type="button" name="btn_login_details" id="cart_btn_login_details" class="custom_topics_btn__button">内容を確認する</button>
@@ -203,6 +213,7 @@
                         ご登録いただいた内容はご登録メールアドレスにお送り致します。<br />
                         商品発送準備が出来次第再度ご連絡申し上げます。
                     </div>
+                    div.
                 </div>
             </div>
         </form>
@@ -231,6 +242,7 @@
                 $('#cart_personal_details__address').text($('#cart_address').val());
                 $('#cart_personal_details__pay').text($('input[name="cart_payment"]:checked').val());
                 $('#cart_personal_details__url').text($('#cart_personal_details__zip').val());
+                $
 
                 if (error_name != '' && error_pwd != '' && error_email != '' && error_tel != '') {
                     $('#cart_login_details').removeClass('active');
@@ -239,6 +251,8 @@
                     $('#cart_list_personal_details1').removeClass('cart_inactive_tab2');
                     $('#cart_list_personal_details1').addClass('cart_active_tab2');
                     $('#cart_personal_details').addClass('active in');
+                } else {
+                    alert("入力が空か間違っています。 確認して。");
                 }
             });
             
