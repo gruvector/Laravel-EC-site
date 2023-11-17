@@ -1863,3 +1863,44 @@ img.table_content_img {
     margin-left: -10rem;
 }
 /* Cart CSS End */
+
+
+/* Order CSS Start */
+
+.order_tab {
+    margin: 3rem 5.7rem;
+}
+.nav-tabs {
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-link {
+    font-size: 3.5rem;
+    height: 13rem;
+}
+.nav-item {
+    background-color: #EFEEE8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 18%;
+}
+
+.tab-pane {
+    background-color: #FFCE5D;
+    height: 50rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.order_tab_part2 {
+    height: 63%;
+    position: absolute;
+    bottom: 0;
+    margin: 1.5rem;
+    background-color: white;
+    width: 97%;
+    border-radius: 2rem;
+}
+/* Order CSS End */
