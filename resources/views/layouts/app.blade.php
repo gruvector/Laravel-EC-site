@@ -20,13 +20,7 @@
 
 <body>
 
-    @php
-        use App\Models\Admin\Category;
-        use App\Models\Wishlist;
-        use App\Models\SiteSetting;
-        $category = Category::all();
-        $setting = SiteSetting::first();
-    @endphp
+
 
         
 

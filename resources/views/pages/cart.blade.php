@@ -50,7 +50,7 @@
                             カート
                         </div>
                     </a>
-                    <a class='basketNav'>
+                    <a class='basketNav' href="{{ route('order') }}">
                         <div class="basketNav_avartar">
                             <img src={{ 'assets/img/Path_26070.png' }} alt="basketNavAvartar" class="basketNav_img" />
                         </div>
