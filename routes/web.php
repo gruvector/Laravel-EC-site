@@ -23,11 +23,13 @@ use App\Http\Controllers\SettingController;
 use App\Http\Controllers\UserRoleController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\TestPaymantController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SmsController;
 use App\Http\Controllers\SocialController;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\Util\Test;
 
 /*
 |--------------------------------------------------------------------------
@@ -261,7 +263,7 @@ Route::view('/QA', 'pages.que_ans')->name('QA');
 Route::view('/userlogin', 'pages.userlogin')->name('userlogin');
 Route::view('/cart', 'pages.cart')->name('cart');
 Route::view('/order', 'pages.order')->name('order');
-
+Route::post('/payment', [TestPaymantController::class, 'payment_charge'])->name('payment');
 
 
 

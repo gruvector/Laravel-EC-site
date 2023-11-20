@@ -509,6 +509,11 @@ h6::selection {
     margin-top: 2.5rem;
     display: flex;
 }
+.button_customize {
+    background-color: white;
+    color: #e5ac22;
+    font-size: 2.5rem;
+}
 .custom_topics_btn__button {
     background-color: #e5ac22;
     width: 28rem;
@@ -1862,6 +1867,36 @@ img.table_content_img {
 .cart_price_user_arrow {
     margin-left: -10rem;
 }
+button.stripe-button-el{
+    background-color: #E5AC22;
+    color: white;
+    width: 28rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2.6rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 2px auto;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.stripe-button-el span{
+    background-image: none;
+    background: none;
+    box-shadow: none;
+    font-size: 2.5rem;
+}
+button.stripe-button-el:hover{
+    border: 2px solid #E5AC22;
+    background-color: white;
+}
+button.stripe-button-el:hover span{
+    background-color: white;
+    color: #E5AC22;
+}
 /* Cart CSS End */
 
 
@@ -1879,28 +1914,158 @@ img.table_content_img {
 }
 .nav-link {
     font-size: 3.5rem;
-    height: 13rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-.nav-item {
+.order_nav-item {
     background-color: #EFEEE8;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 18%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
 }
 
-.tab-pane {
+.order_tab-pane {
     background-color: #FFCE5D;
     height: 50rem;
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 .order_tab_part2 {
     height: 63%;
-    position: absolute;
-    bottom: 0;
-    margin: 1.5rem;
     background-color: white;
-    width: 97%;
     border-radius: 2rem;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    padding: 5.1rem 4.6rem 5.5rem 4.6rem;
+}
+.nav-tabs .nav-link.active {
+    width: 100%;
+    color: black;
+    background-color: #FFCE5D;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border: none;
+    height: 13rem;
+}
+.order-tab-link__text1 {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 4rem;
+    margin: 0;
+    font-weight: 700;
+    margin-top: 2.2rem;
+}
+.order-tab-link__text2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.order_tab_part1 {
+    width: 75%;
+    height: 9rem;
+    display: flex;
+    margin: 3.4rem auto;
+}
+.order_tab_part1_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    text-decoration: underline 4px solid white;
+    text-underline-position: under;
+    margin-right: 4rem;
+}
+.order_tab_part1_2_text1{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.order_tab_part1_2_text2 {
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 700;
+    line-height: 5rem;
+}
+.order_tab_part1_3 {
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.order_tab_part2_1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.order_tab_part2_2 {
+    margin-top: 3.6rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.order_tab_part2_3 {
+    display: grid;
+    grid-template-columns: auto auto; 
+    margin-top: 4.5rem;
+}
+.order_tab_part2_3_1 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #FFCE5D;
+    width: 80%;
+    padding-bottom: 2rem;
+}
+.custom_topics_btn__button1 {
+    background-color: #fff;
+    width: 28rem;
+    height: 5rem;
+    border: none;
+    border-radius: 2.6rem;
+    color: #e5ac22;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 2px auto;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom_topics_btn__button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 1.8rem;
+}
+
+.custom_topics_btn__button1 span:after {
+    font-size: 4rem;
+    font-weight: 100;
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2rem;
+    transition: 0.5s;
+    transform: translateY(-1.7rem);
+}
+
+.custom_topics_btn__button1:hover span {
+    padding-right: 2.5rem;
+}
+
+.custom_topics_btn__button1:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 /* Order CSS End */

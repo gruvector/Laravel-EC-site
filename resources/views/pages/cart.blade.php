@@ -50,7 +50,7 @@
                             カート
                         </div>
                     </a>
-                    <a class='basketNav' href="{{ route('order') }}">
+                    <a class="basketNav"  href="{{ route('order') }}">
                         <div class="basketNav_avartar">
                             <img src={{ 'assets/img/Path_26070.png' }} alt="basketNavAvartar" class="basketNav_img" />
                         </div>
@@ -74,7 +74,7 @@
             <div class="point3_header1">CART</div>
             <div class="point3_header2">買い物かご</div>
         </div>
-        <form method="post" id="cart_register_form" action="">
+        <form method="post" id="cart_register_form" action="{{ route('payment') }}">
             @csrf
             <ul class="nav nav-tabs">
                 <li class="nav-item cart_box_li_first cart_active_tab1" id="cart_list_login_details">
@@ -224,7 +224,17 @@
                     </div>
                     <div class="cart_show1">
                         <button type="button" name="btn_login_details" id="cart_btn_personal_details1" class="custom_topics_btn__button">前のページ</button>
-                        <button type="submit" name="btn_login_details" id="cart_btn_personal_details2" class="custom_topics_btn__button">完了する</button>
+                        <div id="cart_btn_personal_details2" class="" >
+                            <script src="https://checkout.stripe.com/checkout.js"  class="stripe-button to_pay_btn " 
+                                data-key="pk_test_51OERDlJax9oIpgFhPPTdP3Oer4zPuRulSuw6DuACfVoPaucn6oZax4cXjZTzOxk0iLti4AUqzUpdomjGQSZMw88j00tRq2t1a2"
+                                data-amount="450" data-name="総合検定研究所" data-description="aaaa"
+                                data-image="" data-locale="auto" data-label="決済画面へ" data-currency="jpy">
+                            
+                            </script>
+
+                            {{-- <script src="https://checkout.stripe.com/checkout.js" class="stripe-button to_pay_btn" data-key="pk_test_51OERDlJax9oIpgFhPPTdP3Oer4zPuRulSuw6DuACfVoPaucn6oZax4cXjZTzOxk0iLti4AUqzUpdomjGQSZMw88j00tRq2t1a2" data-name="決済" data-description="1111" data-image="111" data-locale="auto" data-label="決済画面へ" data-currency="jpy" data-shipping-address="true" data-billing-address="true" data-email="1111" data-allow-remember-me="false" data-allow-redirect="false" data-panel-label="名前">
+                            </script> --}}
+                        </div>
                     </div>
                 </div>
 
@@ -233,6 +243,7 @@
                         ご購入いただきありがとうございます。<br />
                         ご登録いただいた内容はご登録メールアドレスにお送り致します。<br />
                         商品発送準備が出来次第再度ご連絡申し上げます。
+                        
                     </div>
                     
                 </div>
@@ -298,6 +309,6 @@
             });      
         });
         </script>
-
+        
     {{-- Cart Part End --}}
 @endsection

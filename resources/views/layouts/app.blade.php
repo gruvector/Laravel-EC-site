@@ -19,12 +19,6 @@
 </head>
 
 <body>
-
-
-
-        
-
-
             @yield('content')
 
 

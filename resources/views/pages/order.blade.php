@@ -77,51 +77,161 @@
 
 
     <!-- Nav tabs -->
+<div class="point3_header">
+    <div class="point3_header1">ORDER</div>
+    <div class="point3_header2">ご注文</div>
+</div>
 
 <div class="order_tab">
     <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        <li class="order_nav-item nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">
+                <p class="order-tab-link__text1">1本</p>
+                <p class="order-tab-link__text2">2,780円</p>
+            </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+        <li class="order_nav-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">
+                <p class="order-tab-link__text1">2本</p>
+                <p class="order-tab-link__text2">3,980円</p>
+            </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        <li class="order_nav-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">
+                <p class="order-tab-link__text1">3本</p>
+                <p class="order-tab-link__text2">5,180円</p>
+            </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu3">Menu 3</a>
+        <li class="order_nav-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu3">
+                <p class="order-tab-link__text1">4本</p>
+                <p class="order-tab-link__text2">6,380円</p>
+            </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu4">Menu 4</a>
+        <li class="order_nav-item nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu4">
+                <p class="order-tab-link__text1">5本</p>
+                <p class="order-tab-link__text2">7,580円</p>
+            </a>
         </li>
     </ul>
   
     <!-- Tab panes -->
     <div class="tab-content">
-        <div id="home" class=" tab-pane active"><br>
+        <div id="home" class="order_tab-pane tab-pane active"><br>
             <div class="order_tab_part1">
-
+                <div class="order_tab_part1_1">
+                    送料無料
+                </div>
+                <div class="order_tab_part1_2">
+                    <p class="order_tab_part1_2_text1">まずはお試しの一本から</p>
+                    <p class="order_tab_part1_2_text2">2,780</p>
+                </div>
+                <div class="order_tab_part1_3">
+                    <button class="custom_topics_btn__button1"><span>申し込みへ&nbsp;</span></button>
+                </div>
             </div>
             <div class="order_tab_part2">
-                dfdfsef
+                <div class="order_tab_part2_1">【会員価格】2,650円</div>
+                <div class="order_tab_part2_2">■オプションセット料金</div>
+                <div class="order_tab_part2_3">
+                    <div class="order_tab_part2_3_1">レンタル包丁セット</div>
+                    <div class="order_tab_part2_3_1">レンタル包丁+柄の修理（1本）セット</div>
+                    <div class="order_tab_part2_3_1">柄の修理（1本）セット</div>
+                </div>
             </div>
         </div>
-        <div id="menu1" class=" tab-pane fade"><br>
-            <h3>Menu 1</h3>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div id="menu1" class="order_tab-pane tab-pane fade"><br>
+            <div class="order_tab_part1">
+                <div class="order_tab_part1_1">
+                    送料無料
+                </div>
+                <div class="order_tab_part1_2">
+                    <p class="order_tab_part1_2_text1">まずはお試しの一本から</p>
+                    <p class="order_tab_part1_2_text2">3,980</p>
+                </div>
+                <div class="order_tab_part1_3">
+                    <button class="custom_topics_btn__button1"><span>申し込みへ&nbsp;</span></button>
+                </div>
+            </div>
+            <div class="order_tab_part2">
+                <div class="order_tab_part2_1">【会員価格】3,750円</div>
+                <div class="order_tab_part2_2">■オプションセット料金</div>
+                <div class="order_tab_part2_3">
+                    <div class="order_tab_part2_3_1">レンタル包丁セット</div>
+                    <div class="order_tab_part2_3_1">レンタル包丁+柄の修理（1本）セット</div>
+                    <div class="order_tab_part2_3_1">柄の修理（1本）セット</div>
+                </div>
+            </div>
         </div>
-        <div id="menu2" class=" tab-pane fade"><br>
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <div id="menu2" class="order_tab-pane tab-pane fade"><br>
+            <div class="order_tab_part1">
+                <div class="order_tab_part1_1">
+                    送料無料
+                </div>
+                <div class="order_tab_part1_2">
+                    <p class="order_tab_part1_2_text1">まずはお試しの一本から</p>
+                    <p class="order_tab_part1_2_text2">5,180</p>
+                </div>
+                <div class="order_tab_part1_3">
+                    <button class="custom_topics_btn__button1"><span>申し込みへ&nbsp;</span></button>
+                </div>
+            </div>
+            <div class="order_tab_part2">
+                <div class="order_tab_part2_1">【会員価格】4,750円</div>
+                <div class="order_tab_part2_2">■オプションセット料金</div>
+                <div class="order_tab_part2_3">
+                    <div class="order_tab_part2_3_1">レンタル包丁セット</div>
+                    <div class="order_tab_part2_3_1">レンタル包丁+柄の修理（1本）セット</div>
+                    <div class="order_tab_part2_3_1">柄の修理（1本）セット</div>
+                </div>
+            </div>
         </div>
-        <div id="menu3" class=" tab-pane fade"><br>
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <div id="menu3" class="order_tab-pane tab-pane fade"><br>
+            <div class="order_tab_part1">
+                <div class="order_tab_part1_1">
+                    送料無料
+                </div>
+                <div class="order_tab_part1_2">
+                    <p class="order_tab_part1_2_text1">まずはお試しの一本から</p>
+                    <p class="order_tab_part1_2_text2">6,380</p>
+                </div>
+                <div class="order_tab_part1_3">
+                    <button class="custom_topics_btn__button1"><span>申し込みへ&nbsp;</span></button>
+                </div>
+            </div>
+            <div class="order_tab_part2">
+                <div class="order_tab_part2_1">【会員価格】5,950円</div>
+                <div class="order_tab_part2_2">■オプションセット料金</div>
+                <div class="order_tab_part2_3">
+                    <div class="order_tab_part2_3_1">レンタル包丁セット</div>
+                    <div class="order_tab_part2_3_1">レンタル包丁+柄の修理（1本）セット</div>
+                    <div class="order_tab_part2_3_1">柄の修理（1本）セット</div>
+                </div>
+            </div>
         </div>
-        <div id="menu4" class=" tab-pane fade"><br>
-            <h3>Menu 2</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        <div id="menu4" class="order_tab-pane tab-pane fade"><br>
+            <div class="order_tab_part1">
+                <div class="order_tab_part1_1">
+                    送料無料
+                </div>
+                <div class="order_tab_part1_2">
+                    <p class="order_tab_part1_2_text1">まずはお試しの一本から</p>
+                    <p class="order_tab_part1_2_text2">7,580</p>
+                </div>
+                <div class="order_tab_part1_3">
+                    <button class="custom_topics_btn__button1"><span>申し込みへ&nbsp;</span></button>
+                </div>
+            </div>
+            <div class="order_tab_part2">
+                <div class="order_tab_part2_1">【会員価格】7,050円</div>
+                <div class="order_tab_part2_2">■オプションセット料金</div>
+                <div class="order_tab_part2_3">
+                    <div class="order_tab_part2_3_1">レンタル包丁セット</div>
+                    <div class="order_tab_part2_3_1">レンタル包丁+柄の修理（1本）セット</div>
+                    <div class="order_tab_part2_3_1">柄の修理（1本）セット</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
