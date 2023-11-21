@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AchieveController;
 use App\Http\Controllers\AddToCartController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\category\BrandController;
@@ -256,7 +257,7 @@ Route::get('/payment-notification', [PaymentController::class, 'notification']);
 Route::view('/condition', 'pages.condition')->name('condition');
 Route::view('/intro', 'pages.introduction')->name('intro');
 Route::view('/home', 'pages.index')->name('home');
-Route::view('/voice1', 'pages.clients_voice1')->name('voice1');
+Route::get('/voice1', [AchieveController::class, 'index'])->name('voice1');
 Route::view('/voice2', 'pages.clients_voice2')->name('voice2');
 Route::view('/QA', 'pages.que_ans')->name('QA');
 Route::view('/userlogin', 'pages.userlogin')->name('userlogin');

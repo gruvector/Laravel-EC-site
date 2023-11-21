@@ -106,15 +106,29 @@
         <div class="point3_header1">ACHIVEMENT</div>
         <div class="point3_header2">研磨実績</div>
         <div class="point3_body_text">LOGOでは、さまざまな包丁を磨きあげています。</div>
-        <div class="bef_aft3__btngrp">
-            <div class="before3_btn">すべて</div>
-            <div class="before3_btn">クリーニング</div>
-            <div class="before3_btn">刃欠けなおし</div>
-            <div class="before3_btn">研ぎなおし</div>
-            <div class="before3_btn">厚み修正</div>
-        </div>
+        <form class="bef_aft3__btngrp" action="{{route('voice1')}}">
+            @csrf
+            <input type="hidden" name="voice1_btn_input" id="voice1_btn_input__id">
+            <button class="before3_btn">すべて</button>
+            <button class="before3_btn">クリーニング</button>
+            <button class="before3_btn">刃欠けなおし</button>
+            <button class="before3_btn">研ぎなおし</button>
+            <button class="before3_btn">厚み修正</button>
+        </form>
     </div>
-
+    <div class="merchan_main">
+        @foreach ($achieve as $item)
+        <div class="merchan_main1">
+            <img src=" {{ $item['image'] }} " alt="">
+            <div class="merchan_main1_name">{{$item['name']}}</div>
+            <div class="merchan_main1_desc">
+                <div class="merchan_main1_desc1">2023. 11. 20</div>
+                <div class="merchan_main1_desc1">{{$item['achieve']}}</div>
+                
+            </div>
+        </div>
+        @endforeach
+    </div>
 </div>
 
 {{-- Electronic Commerce End --}}
@@ -188,16 +202,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() { 
-        $('#pagination-demo').twbsPagination({
-            totalPages: 16,
-            visiblePages: 6,
-            next: 'Next',
-            prev: 'Prev',
-            onPageClick: function (event, page) {
-                //fetch content and render here
-                $('#page-content').text('Page ' + page) + ' content here';
-            }
-        });
+        // $('#pagination-demo').twbsPagination({
+        //     totalPages: 16,
+        //     visiblePages: 6,
+        //     next: 'Next',
+        //     prev: 'Prev',
+        //     onPageClick: function (event, page) {
+        //         //fetch content and render here
+        //         $('#page-content').text('Page ' + page) + ' content here';
+        //     }
+        // });
+        $('.before3_btn').click(function() {
+            $('#voice1_btn_input__id').val($(this).text());
+            console.log($('#voice1_btn_input__id').val());
+        })
     })
 
 </script>

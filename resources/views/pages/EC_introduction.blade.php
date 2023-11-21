@@ -166,13 +166,15 @@
         <div class="point3_header1">MERCHANDISE</div>
         <div class="point3_header2">商品紹介一覧</div>
         <div class="point3_body_text">LOGOでは、さまざまな商品をご提供しています。</div>
-        <div class="bef_aft3__btngrp">
-            <div class="before3_btn">すべて</div>
-            <div class="before3_btn">新着</div>
-            <div class="before3_btn">出刃</div>
-            <div class="before3_btn">牛刀</div>
-            <div class="before3_btn">ペティ</div>
-        </div>
+        <form class="bef_aft3__btngrp" action="{{route('EC-intro')}}">
+            @csrf
+            <input type="hidden" name="before3_btn_input" id="before3_btn_input__id">
+            <button class="before3_btn">すべて</button>
+            <button class="before3_btn">新着</button>
+            <button class="before3_btn">出刃</button>
+            <button class="before3_btn">牛刀</button>
+            <button class="before3_btn">ペティ</button>
+        </form>
     </div> 
     <div class="merchan_main">
         @foreach ($product as $item)
@@ -216,16 +218,21 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(document).ready(function() { 
-        $('#pagination-demo').twbsPagination({
-            totalPages: 16,
-            visiblePages: 6,
-            next: 'Next',
-            prev: 'Prev',
-            onPageClick: function (event, page) {
-                //fetch content and render here
-                $('#page-content').text('Page ' + page) + ' content here';
-            }
-        });
+        // $('#pagination-demo').twbsPagination({
+        //     totalPages: 16,
+        //     visiblePages: 6,
+        //     next: 'Next',
+        //     prev: 'Prev',
+        //     onPageClick: function (event, page) {
+        //         //fetch content and render here
+        //         $('#page-content').text('Page ' + page) + ' content here';
+        //     }
+        // });
+        $('.before3_btn').click(function() {
+            $('#before3_btn_input__id').val($(this).text());
+            console.log($('#before3_btn_input__id').val());
+        })
+        
     })
 
 </script>

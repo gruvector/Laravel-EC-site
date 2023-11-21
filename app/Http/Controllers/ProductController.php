@@ -17,9 +17,15 @@ class ProductController extends Controller
         $product = Product::all();
         return view('admin.product.all', compact('product'));
     }
-    public function ec_intro()
+    public function ec_intro(Request $request)
     {
-        $product = Product::all();
+        $type = $request->input('before3_btn_input');
+        if(!$type){
+            $product = Product::all();
+        } else{
+            $product = Product::where('product_color', $type)->get();
+            // dd($product);
+        }
         return view('pages.EC_introduction', compact('product'));
     }
     public function client_voice1()
@@ -38,10 +44,6 @@ class ProductController extends Controller
         $test = $free_test;
         return view('pages.cart', compact('test'));
     }
-
-
-
-
 
     public function create()
     {
