@@ -1259,7 +1259,10 @@ img.table_content_img {
 /* EC Css Start */
 
 .ec {
-    margin: 6.8rem 5.7rem 0 5.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5.7rem;
     width: 100%;
 }
 .ec_main {
@@ -1274,9 +1277,9 @@ img.table_content_img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: calc(25vw);
 }
 .ec_main_part img {
-    max-width: 25rem;
     width: 100%;
 }
 
@@ -1289,6 +1292,40 @@ img.table_content_img {
     font-size: 1.8rem;
 }
 /* EC CSS End */
+
+/* Merchandise CSS Start */
+
+.merchan_main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3rem;
+    row-gap: 4rem;
+    margin: 4.5rem 5.7rem 6.1rem 5.7rem
+}
+.merchan_main1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.merchan_main1 > img {
+    width: 100%;
+}
+.merchan_main1_name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 2.1rem;
+    margin-bottom: 1.3rem;
+    color: black;
+}
+.merchan_main1_price {
+    font-size: 2rem;
+    font-weight: 400;
+    color: red;
+    letter-spacing: 1px;
+}
+/* Merchandise CSS End */
 /* EC Introduction CSS End */
 
 /* Clients voice 1 CSS start */

@@ -17,6 +17,31 @@ class ProductController extends Controller
         $product = Product::all();
         return view('admin.product.all', compact('product'));
     }
+    public function ec_intro()
+    {
+        $product = Product::all();
+        return view('pages.EC_introduction', compact('product'));
+    }
+    public function client_voice1()
+    {
+        $product = Product::all();
+        return view('pages.clients_voice1', compact('product'));
+    }
+    public function sales()
+    {
+        $product = Product::all();
+        return view('pages.sales', compact('product'));
+    }
+
+    public function cart_ec($id) {
+        $free_test = Product::where('id', $id)->get()->first();
+        $test = $free_test;
+        return view('pages.cart', compact('test'));
+    }
+
+
+
+
 
     public function create()
     {

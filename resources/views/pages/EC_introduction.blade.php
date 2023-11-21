@@ -135,7 +135,7 @@
             <img src="{{"assets/img/Group_11666.png"}}" alt="">
             <div class="ec_part__head">全国発送</div>
             <div class="ec_part__text">
-                オンラインストアでご注文いただいた商品は<br />
+                オンラインストアでご注文いただいた商品は
                 全国配送可能です。
             </div>
         </div>
@@ -143,7 +143,7 @@
             <img src="{{"assets/img/Group_11667.png"}}" alt="">
             <div class="ec_part__head">アフターサポート</div>
             <div class="ec_part__text">
-                首元の調整などの購入後の<br />
+                首元の調整などの購入後の
                 アフターサポートも行います。
             </div>
         </div>
@@ -151,7 +151,7 @@
             <img src="{{"assets/img/Group_11668.png"}}" alt="">
             <div class="ec_part__head">さまざまなお支払い</div>
             <div class="ec_part__text">
-                クレジットカードやコンビニ支払いなど、<br />
+                クレジットカードやコンビニ支払いなど、
                 さまざまなお支払いに対応しております。
             </div>
         </div>
@@ -173,71 +173,20 @@
             <div class="before3_btn">牛刀</div>
             <div class="before3_btn">ペティ</div>
         </div>
-    </div>
+    </div> 
     <div class="merchan_main">
+        @foreach ($product as $item)
+        <a href="{{ route('cart_ec', ['id' => $item['id']]) }}">
         <div class="merchan_main1">
-
-        </div>
-        <div class="merchan_main2">
-
-        </div>
-        <div class="merchan_main3">
-            
-        </div>
-        <div class="merchan_main4">
-            
-        </div>
-        <div class="merchan_main5">
-            
-        </div>
-        <div class="merchan_main6">
-            
-        </div>
-        <div class="merchan_main7">
-            
-        </div>
-        <div class="merchan_main8">
-            
-        </div>
-        <div class="merchan_main9">
-            
-        </div>
-        <div class="merchan_main10">
-            
-        </div>
-        <div class="merchan_main11">
-            
-        </div>
-        <div class="merchan_main12">
-            
-        </div>
-        <div class="merchan_main13">
-            
-        </div>
-        <div class="merchan_main14">
-            
-        </div>
-        <div class="merchan_main15">
-            
-        </div>
-        <div class="merchan_main16">
-            
-        </div>
-        <div class="merchan_main17">
-            
-        </div>
-        <div class="merchan_main18">
-            
-        </div>
-        <div class="merchan_main19">
-            
-        </div>
-        <div class="merchan_main20">
-            
-        </div>
-        <div class="merchan_pagiation">
-            <ul id="pagination-demo" class="pagination-sm"></ul>
-        </div>
+            <img src=" {{ $item['image_two'] }} " alt="">
+            <div class="merchan_main1_name">{{$item['product_name']}}</div>
+            <div class="merchan_main1_price">￥{{$item['selling_price']}} (税込)</div>
+        </div></a>
+        @endforeach
+        
+    </div>
+    <div class="merchan_pagiation">
+        <ul id="pagination-demo" class="pagination-sm"></ul>
     </div>
 </div>
 

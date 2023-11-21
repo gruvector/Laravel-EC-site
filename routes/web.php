@@ -256,14 +256,17 @@ Route::get('/payment-notification', [PaymentController::class, 'notification']);
 Route::view('/condition', 'pages.condition')->name('condition');
 Route::view('/intro', 'pages.introduction')->name('intro');
 Route::view('/home', 'pages.index')->name('home');
-Route::view('/EC-intro', 'pages.EC_Introduction')->name('EC-intro');
 Route::view('/voice1', 'pages.clients_voice1')->name('voice1');
 Route::view('/voice2', 'pages.clients_voice2')->name('voice2');
 Route::view('/QA', 'pages.que_ans')->name('QA');
 Route::view('/userlogin', 'pages.userlogin')->name('userlogin');
 Route::view('/cart', 'pages.cart')->name('cart');
 Route::view('/order', 'pages.order')->name('order');
-Route::post('/payment', [TestPaymantController::class, 'payment_charge'])->name('payment');
+Route::post('/payment-order', [TestPaymantController::class, 'payment_charge'])->name('payment_order');
+Route::post('/payment-cart', [TestPaymantController::class, 'payment_charge1'])->name('payment_cart');
+Route::get('/EC-intro', [ProductController::class, 'ec_intro'])->name('EC-intro');
+Route::get('/cart/{id}', [ProductController::class, 'cart_ec'])->name('cart_ec');
+
 
 
 

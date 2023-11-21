@@ -242,7 +242,7 @@
 {{-- order Start --}}
 
 <div class="cart_box" id="order_box" style="display: none">
-    <form method="post" id="order_register_form" action="{{ route('payment') }}">
+    <form method="post" id="order_register_form" action="{{ route('payment_order') }}">
         @csrf
         <ul class="nav nav-tabs">
             <li class="nav-item cart_box_li_first cart_active_tab1" id="order_list_login_details">

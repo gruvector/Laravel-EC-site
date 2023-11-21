@@ -74,7 +74,7 @@
             <div class="point3_header1">CART</div>
             <div class="point3_header2">買い物かご</div>
         </div>
-        <form method="post" id="cart_register_form" action="{{ route('payment') }}">
+        <form method="post" id="cart_register_form" action="{{ route('payment_cart') }}">
             @csrf
             <ul class="nav nav-tabs">
                 <li class="nav-item cart_box_li_first cart_active_tab1" id="cart_list_login_details">
@@ -99,7 +99,7 @@
                     </div>
                     <div class="cart_price_custom_text1">まずはお試しの一本から</div>
                     <div class="cart_price_custom_text5">---------</div>
-                    <span class="cart_price_custom_text2">2780</span>
+                    <span class="cart_price_custom_text2" id="cart_price">{{$test['selling_price']}}</span>
                     <div class="cart_price_custom_text3">円</div> 
                     <div class="cart_price_custom_text4">送料無料</div>
                 </div>
@@ -107,12 +107,12 @@
                     <div class="cart_price_custom_ribbon">
                         <img src="{{'assets/img/Group 11575.png'}}" alt="">
                     </div>
-                    <div class="cart_price_user_text1">2,780</div>
+                    <div class="cart_price_user_text1">{{$test['selling_price']}}</div>
                     <div class="cart_price_user_text2">円</div>
                     <div class="cart_price_user_arrow">
                         <img src="{{'assets/img/Group 11662.png'}}" alt="">
                     </div>
-                    <div class="cart_price_user_text1">2,650</div>
+                    <div class="cart_price_user_text1" id="cart_price_user">{{$test['discount_price']}}</div>
                     <div class="cart_price_user_text2">円</div>
                 </div>
             </div>
@@ -225,15 +225,16 @@
                     <div class="cart_show1">
                         <button type="button" name="btn_login_details" id="cart_btn_personal_details1" class="custom_topics_btn__button">前のページ</button>
                         <div id="cart_btn_personal_details2" class="" >
-                            <script src="https://checkout.stripe.com/checkout.js"  class="stripe-button to_pay_btn " 
-                                data-key="pk_test_51OERDlJax9oIpgFhPPTdP3Oer4zPuRulSuw6DuACfVoPaucn6oZax4cXjZTzOxk0iLti4AUqzUpdomjGQSZMw88j00tRq2t1a2"
-                                data-amount="450" data-name="総合検定研究所" data-description="aaaa"
-                                data-image="" data-locale="auto" data-label="決済画面へ" data-currency="jpy">
-                            
-                            </script>
+                            <script src="https://checkout.stripe.com/checkout.js"  class="stripe-button to_pay_btn" 
+                            data-key="pk_test_51OERDlJax9oIpgFhPPTdP3Oer4zPuRulSuw6DuACfVoPaucn6oZax4cXjZTzOxk0iLti4AUqzUpdomjGQSZMw88j00tRq2t1a2"
+                            data-amount="" data-name="総合検定研究所" data-description=""
+                            data-image="" data-locale="auto" data-label="決済画面へ" data-currency="jpy">
+                        
+                        </script>
 
                             {{-- <script src="https://checkout.stripe.com/checkout.js" class="stripe-button to_pay_btn" data-key="pk_test_51OERDlJax9oIpgFhPPTdP3Oer4zPuRulSuw6DuACfVoPaucn6oZax4cXjZTzOxk0iLti4AUqzUpdomjGQSZMw88j00tRq2t1a2" data-name="決済" data-description="1111" data-image="111" data-locale="auto" data-label="決済画面へ" data-currency="jpy" data-shipping-address="true" data-billing-address="true" data-email="1111" data-allow-remember-me="false" data-allow-redirect="false" data-panel-label="名前">
                             </script> --}}
+                        <input type="hidden" name="cart_price" id="cart_price__input" />
                         </div>
                     </div>
                 </div>
@@ -261,6 +262,9 @@
                 } else {
                     $("#cart_btn_login_details").attr('disabled', 'disabled');
                 }
+                var price_str = $("#cart_price").text();
+                var price = Number(price_str);
+                $("#cart_price__input").val(price.toString());
             })
         
             $('#cart_btn_login_details').click(function(){
