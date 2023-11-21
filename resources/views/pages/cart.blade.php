@@ -176,7 +176,7 @@
                         <input type="checkbox" name="cart_checkbox" id="cart_checkbox"> &nbsp;<label for="cart_checkbox">上記内容に同意する</label>
                     </div>
                     <div>
-                        <button type="button" name="btn_login_details" id="cart_btn_login_details" class="custom_topics_btn__button">内容を確認する</button>
+                        <button type="button" name="btn_login_details" id="cart_btn_login_details" class="custom_topics_btn__button" disabled>内容を確認する</button>
                     </div>
 
                 </div>
@@ -254,6 +254,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+
+            $("#cart_checkbox").click(function() {
+                if($("#cart_checkbox:checked").val() == "on") {
+                    $("#cart_btn_login_details").removeAttr('disabled');
+                } else {
+                    $("#cart_btn_login_details").attr('disabled', 'disabled');
+                }
+            })
         
             $('#cart_btn_login_details').click(function(){
             

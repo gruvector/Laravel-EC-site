@@ -1897,6 +1897,9 @@ button.stripe-button-el:hover span{
     background-color: white;
     color: #E5AC22;
 }
+.custom_topics_btn__button:disabled {
+    background-color: #c6c3b2;
+}
 /* Cart CSS End */
 
 
