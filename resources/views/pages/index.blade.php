@@ -458,14 +458,17 @@
                 dots: true,
                 lazyLoad: true,
                 responsive: {
-                    0: {
+                    430: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    1024: {
                         items: 2
                     },
-                    600: {
+                    1344: {
                         items: 3
-                    },
-                    1200: {
-                        items: 4
                     }
                 }
             })
