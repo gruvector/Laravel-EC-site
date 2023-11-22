@@ -41,7 +41,7 @@
                         ログイン
                     </div>
                 </a>
-                <a class='loginNav' href="{{route('cart')}}">
+                <a class='loginNav' href="{{route('sales')}}">
                     <div class="loginNav_avartar">
                         <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
                     </div>
@@ -106,25 +106,22 @@
         <div class="point3_header1">ACHIVEMENT</div>
         <div class="point3_header2">研磨実績</div>
         <div class="point3_body_text">LOGOでは、さまざまな包丁を磨きあげています。</div>
-        <form class="bef_aft3__btngrp" action="{{route('voice1')}}">
-            @csrf
-            <input type="hidden" name="voice1_btn_input" id="voice1_btn_input__id">
-            <button class="before3_btn">すべて</button>
-            <button class="before3_btn">クリーニング</button>
-            <button class="before3_btn">刃欠けなおし</button>
-            <button class="before3_btn">研ぎなおし</button>
-            <button class="before3_btn">厚み修正</button>
-        </form>
+        <div class="bef_aft3__btngrp">
+            <button class="before3_btn" id="before3_btn_v1">すべて</button>
+            <button class="before3_btn" id="before3_btn_v2">クリーニング</button>
+            <button class="before3_btn" id="before3_btn_v3">刃欠けなおし</button>
+            <button class="before3_btn" id="before3_btn_v4">研ぎなおし</button>
+            <button class="before3_btn" id="before3_btn_v5">厚み修正</button>
+        </div>
     </div>
     <div class="merchan_main">
         @foreach ($achieve as $item)
-        <div class="merchan_main1">
+        <div class="merchan_main1 {{ $item['type'] }}">
             <img src=" {{ $item['image'] }} " alt="">
             <div class="merchan_main1_name">{{$item['name']}}</div>
             <div class="merchan_main1_desc">
                 <div class="merchan_main1_desc1">2023. 11. 20</div>
                 <div class="merchan_main1_desc1">{{$item['achieve']}}</div>
-                
             </div>
         </div>
         @endforeach
@@ -212,9 +209,24 @@
         //         $('#page-content').text('Page ' + page) + ' content here';
         //     }
         // });
-        $('.before3_btn').click(function() {
-            $('#voice1_btn_input__id').val($(this).text());
-            console.log($('#voice1_btn_input__id').val());
+        $('#before3_btn_v1').click(function() {
+            $('div.merchan_main1').show();
+        })
+        $('#before3_btn_v2').click(function() {
+            $('div.merchan_main1').hide();
+            $('div.クリーニング').show();
+        })
+        $('#before3_btn_v3').click(function() {
+            $('div.merchan_main1').hide();
+            $('div.刃欠けなおし').show();
+        })
+        $('#before3_btn_v4').click(function() {
+            $('div.merchan_main1').hide();
+            $('div.研ぎなおし').show();
+        })
+        $('#before3_btn_v5').click(function() {
+            $('div.merchan_main1').hide();
+            $('div.厚み修正').show();
         })
     })
 

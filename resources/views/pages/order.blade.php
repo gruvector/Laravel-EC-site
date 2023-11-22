@@ -41,7 +41,7 @@
                         ログイン
                     </div>
                 </a>
-                <a class='loginNav' href="{{route('cart')}}">
+                <a class='loginNav' href="{{route('sales')}}">
                     <div class="loginNav_avartar">
                         <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
                     </div>

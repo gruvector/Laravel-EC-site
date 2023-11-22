@@ -1315,6 +1315,12 @@ img.table_content_img {
     justify-content: center;
     align-items: center;
 }
+div.merchan_main1 > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .merchan_main1 > img {
     width: 100%;
 }

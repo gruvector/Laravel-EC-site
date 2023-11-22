@@ -41,7 +41,7 @@
                         ログイン
                     </div>
                 </a>
-                <a class='loginNav' href="{{route('cart')}}">
+                <a class='loginNav' href="{{route('sales')}}">
                     <div class="loginNav_avartar">
                         <img src={{ 'assets/img/Path_26071.png' }} alt="loginAvartar" class="loginNav_img" />
                     </div>
@@ -161,31 +161,30 @@
 
 {{-- Merchandise Start --}}
 
-<div class="merchandise">
+<div class="merchandise" id="merchandise">
     <div class="point3_header">
         <div class="point3_header1">MERCHANDISE</div>
         <div class="point3_header2">商品紹介一覧</div>
         <div class="point3_body_text">LOGOでは、さまざまな商品をご提供しています。</div>
-        <form class="bef_aft3__btngrp" action="{{route('EC-intro')}}">
-            @csrf
+        <div class="bef_aft3__btngrp">
             <input type="hidden" name="before3_btn_input" id="before3_btn_input__id">
-            <button class="before3_btn">すべて</button>
-            <button class="before3_btn">新着</button>
-            <button class="before3_btn">出刃</button>
-            <button class="before3_btn">牛刀</button>
-            <button class="before3_btn">ペティ</button>
-        </form>
+            <button class="before3_btn" id="before3_btn_e1">すべて</button>
+            <button class="before3_btn" id="before3_btn_e2">新着</button>
+            <button class="before3_btn" id="before3_btn_e3">出刃</button>
+            <button class="before3_btn" id="before3_btn_e4">牛刀</button>
+            <button class="before3_btn" id="before3_btn_e5">ペティ</button>
+        </div>
     </div> 
     <div class="merchan_main">
         @foreach ($product as $item)
-        <a href="{{ route('cart_ec', ['id' => $item['id']]) }}">
-        <div class="merchan_main1">
+        
+        <div class="merchan_main1 {{ $item['product_color'] }}">
+            <a href="{{ route('cart_ec', ['id' => $item['id']]) }}">
             <img src=" {{ $item['image_two'] }} " alt="">
             <div class="merchan_main1_name">{{$item['product_name']}}</div>
             <div class="merchan_main1_price">￥{{$item['selling_price']}} (税込)</div>
-        </div></a>
+        </a></div>
         @endforeach
-        
     </div>
     <div class="merchan_pagiation">
         <ul id="pagination-demo" class="pagination-sm"></ul>
@@ -228,9 +227,24 @@
         //         $('#page-content').text('Page ' + page) + ' content here';
         //     }
         // });
-        $('.before3_btn').click(function() {
-            $('#before3_btn_input__id').val($(this).text());
-            console.log($('#before3_btn_input__id').val());
+        $('#before3_btn_e1').click(function() {
+            $('div.merchan_main1').show();
+        })
+        $('#before3_btn_e2').click(function() {
+            $('div.merchan_main1').hide();
+            $('div.新着').show();
+        })
+        $('#before3_btn_e3').click(function() {
+            $('div.merchan_main1').hide();
+            $('div.出刃').show();
+        })
+        $('#before3_btn_e4').click(function() {
+            $('div.merchan_main1').hide();
+            $('div.牛刀').show();
+        })
+        $('#before3_btn_e5').click(function() {
+            $('div.merchan_main1').hide();
+            $('div.ペティ').show();
         })
         
     })

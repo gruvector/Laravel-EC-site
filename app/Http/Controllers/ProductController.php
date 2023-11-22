@@ -17,10 +17,11 @@ class ProductController extends Controller
         $product = Product::all();
         return view('admin.product.all', compact('product'));
     }
+
     public function ec_intro(Request $request)
     {
         $type = $request->input('before3_btn_input');
-        if(!$type){
+        if(!$type || $type == "すべて"){
             $product = Product::all();
         } else{
             $product = Product::where('product_color', $type)->get();
@@ -28,17 +29,18 @@ class ProductController extends Controller
         }
         return view('pages.EC_introduction', compact('product'));
     }
+
+    public function sales(Request $request) {
+        $sales = Product::all();
+        return view('pages.sales', compact('sales'));
+    }
+
     public function client_voice1()
     {
         $product = Product::all();
         return view('pages.clients_voice1', compact('product'));
     }
-    public function sales()
-    {
-        $product = Product::all();
-        return view('pages.sales', compact('product'));
-    }
-
+    
     public function cart_ec($id) {
         $free_test = Product::where('id', $id)->get()->first();
         $test = $free_test;
@@ -52,6 +54,7 @@ class ProductController extends Controller
         $brand = Brand::all();
         return view('admin.product.create', compact('category', 'subcat', 'brand'));
     }
+    
     public function store(Request $request)
     {
 
