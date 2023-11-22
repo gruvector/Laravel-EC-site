@@ -509,8 +509,8 @@ h6::selection {
     width: 100%;
     overflow-x: hidden;
 }
-.owl-one {
-    width: 100%;
+div.cloned {
+    width: 0;
 }
 .custom_topics2_1 {
     width: 32.8rem;
@@ -574,7 +574,6 @@ h6::selection {
 
 .about_us {
     width: 100%;
-    height: 50rem;
 }
 .aboutus_aboutus {
     font-size: 5.5rem;
@@ -590,6 +589,9 @@ h6::selection {
     width: 100%;
     position: absolute;
 }
+.aboutus_raku > img {
+    width: 100%;
+}
 .aboutus_text {
     width: 40rem;
     font-size: 1.7rem;
@@ -599,9 +601,12 @@ h6::selection {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.aboutus__img {
+.aboutus_img {
+    width: calc(40vw);
+    height: auto;
+}
+.aboutus_img > img {
     width: 100%;
-    height: 100%;
 }
 .aboutus_main {
     display: flex;
@@ -609,8 +614,8 @@ h6::selection {
     justify-content: space-between;
     height: auto;
     z-index: 1;
-    margin-left: 17.8rem;
-    margin-right: 13.11rem;
+    margin-left: 10.8rem;
+    margin-right: 10.11rem;
 }
 
 /* About us CSS end */
@@ -618,7 +623,7 @@ h6::selection {
 /* Point 3 CSS start */
 
 .point3_com {
-    width: 38rem;
+    width: calc(30vw);
     height: 46rem;
     border-radius: 1rem;
     box-shadow: 2px 1px 3px 1px #ffedc1;
@@ -696,7 +701,6 @@ h6::selection {
 }
 .point3_body {
     width: 100%;
-    height: 72rem;
     background-image: url("../../assets/img/Group_11340.png");
     background-position: center;
     background-size: cover;
@@ -796,8 +800,10 @@ img.table_content_img {
     margin: 4rem 5.7rem 14.5rem 5.7rem;
 }
 .before_com {
-    margin-right: 4.4rem;
     text-align: center;
+}
+div.before_com > img {
+    width: 100%;
 }
 .before_com__p1 {
     font-size: 2.5rem;
@@ -941,12 +947,16 @@ img.table_content_img {
     margin-top: 3rem;
 }
 .point3_com2 {
-    width: calc(22vw);
+    width: calc(30vw);
     border-radius: 1rem;
     background-color: white;
 }
 .point3_com__img2 {
     margin: 7rem auto 2rem auto;
+    width: 100%;
+}
+.point3_com__img2 > img {
+    width: 100%;
 }
 /* Point3 2 CSS End */
 
@@ -1036,7 +1046,8 @@ img.table_content_img {
     margin: 0 5.7rem 9rem 5.7rem;
 }
 .desc_text {
-    width: 50rem;
+    width: 90%;
+    margin-right: 1rem;
 }
 .desc_text__head {
     font-size: 2.5rem;
@@ -1046,6 +1057,10 @@ img.table_content_img {
 .desc_text__text {
     font-size: 1.8rem;
     margin-top: 2.9rem;
+    margin-bottom: 1rem;
+}
+.desc_img > img{
+    width: 100%;
 }
 /* Before/After CSS End */
 
@@ -1059,6 +1074,7 @@ img.table_content_img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    width: 100%;
 }
 .bef_aft3__btngrp {
     max-width: 79rem;
@@ -1097,12 +1113,13 @@ img.table_content_img {
     margin: 4.5rem 5.7rem 0 5.7rem;
     grid-template-columns: auto auto auto;
     row-gap: 4rem;
+    column-gap: 4rem;
 
 }
 .before3_img {
-    grid-column: 2 / span 2;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+    right: calc(10vw);
 }
 /* Before/After 3 CSS ENd */
 
@@ -2275,7 +2292,7 @@ button.stripe-button-el:hover span{
 
 /* Responsive */
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 425px) {
     .footer {
         display: flex;
         justify-content: center;
@@ -2286,9 +2303,49 @@ button.stripe-button-el:hover span{
     .footer2 {
         display: none;
     }
+    .aboutus2_aboutus {
+        font-size: 3.5rem;
+    }
+    .before2_arrow {
+        transform: translate(calc(30.7vw), 18rem);
+    }
 }
 
-
+@media only screen and (max-width: 560px) {
+    .custom_topics {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .custom_slider_nav {
+        flex-direction: column;
+    }
+    .custom_topics1_head {
+        writing-mode: horizontal-tb;
+    }
+    .custom_topics1_subtitle {
+        display: none;
+    }
+    .custom_topics2 {
+        margin-left: calc(35vw);
+    }
+    .custom_topics1 {
+        padding-left: 0;
+    }
+    
+    .point3_body_main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .point3_com {
+        width: calc(70vw);
+        margin-bottom: 5rem;
+    }
+    .point3_com2 {
+        width: calc(70vw);
+    }
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -2319,6 +2376,49 @@ button.stripe-button-el:hover span{
     }
     .bottomtext2 {
         font-size: 5rem;
+    }
+    .aboutus_main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .point3_com__img {
+        width: 13rem;
+        height: 13rem;
+    }
+    .contact_part1_img1 {
+        display: none;
+    }
+    .contact_part1_img2 {
+        margin-left: 1rem;
+    }
+    .contact_part1_text {
+        margin-left: 1rem;
+    }
+    .contact_part {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact1_img {
+        display: none;
+    }
+    .before {
+        margin-bottom: 10rem;
+    }
+    .contact1_img21 {
+        display: none;
+    }
+    .contact1_img22 {
+        display: none;
+    }
+    .before2_arrow {
+        transform: translate(calc(43.7vw), 18rem);
+    }
+    .desc {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -2362,7 +2462,11 @@ button.stripe-button-el:hover span{
     .nav_logo__div {
         height: 10rem;
     }
+    .before2_arrow {
+        transform: translate(calc(45.7vw), 18rem);
+    }
 }
+
 @media only screen and (max-width: 1134px) {
     .mainnav_inside {
         letter-spacing: -0.6rem;

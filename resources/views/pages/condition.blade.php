@@ -138,7 +138,7 @@
         <div class="point3_header2">こんなお悩みありませんか？</div>
     </div>
     <div class="worry_part">
-        <div class="worry_part__mainimg">
+        {{-- <div class="worry_part__mainimg">
             <div class="worry_part__partimg">
                 <img src="{{"assets/img/24336078.png"}}" alt="">
             </div>
@@ -148,7 +148,7 @@
         <div class="worry_part__partimg3"><img src="{{"assets/img/img3.png"}}" alt=""></div>
         <div class="worry_part__partimg4"><img src="{{"assets/img/img4.png"}}" alt=""></div>
         <div class="worry_part__partimg5"><img src="{{"assets/img/img5.png"}}" alt=""></div>
-        <div class="worry_part__partimg6"><img src="{{"assets/img/img6.png"}}" alt=""></div>
+        <div class="worry_part__partimg6"><img src="{{"assets/img/img6.png"}}" alt=""></div> --}}
     </div>
     <div class="worry_midimg">
         <div class="worry_midimg1"><img src="{{"assets/img/Group_11438.png"}}" alt=""></div>

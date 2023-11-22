@@ -458,7 +458,7 @@
                 dots: true,
                 lazyLoad: true,
                 responsive: {
-                    430: {
+                    425: {
                         items: 1
                     },
                     768: {
