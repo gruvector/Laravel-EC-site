@@ -138,6 +138,7 @@
         <div class="point3_header2">こんなお悩みありませんか？</div>
     </div>
     <div class="worry_part">
+        <img src="{{"assets/img/Group 11663.png"}}" alt="">
         {{-- <div class="worry_part__mainimg">
             <div class="worry_part__partimg">
                 <img src="{{"assets/img/24336078.png"}}" alt="">

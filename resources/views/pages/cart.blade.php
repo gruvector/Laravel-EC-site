@@ -97,11 +97,11 @@
                     <div class="cart_price_custom_ribbon">
                         <img src="{{'assets/img/Group_11462 (2).png'}}" alt="">
                     </div>
-                    <div class="cart_price_custom_text1">まずはお試しの一本から</div>
-                    <div class="cart_price_custom_text5">---------</div>
-                    <span class="cart_price_custom_text2" id="cart_price">{{$test['selling_price']}}</span>
-                    <div class="cart_price_custom_text3">円</div> 
-                    <div class="cart_price_custom_text4">送料無料</div>
+                        <div class="cart_price_custom_text1">まずはお試しの一本から</div>
+                        <div class="cart_price_custom_text5">---------</div>
+                        <span class="cart_price_custom_text2" id="cart_price">{{$test['selling_price']}}</span>
+                        <div class="cart_price_custom_text3">円</div> 
+                        <div class="cart_price_custom_text4">送料無料</div>
                 </div>
                 <div class="cart_price_user">
                     <div class="cart_price_custom_ribbon">
@@ -112,8 +112,8 @@
                     <div class="cart_price_user_arrow">
                         <img src="{{'assets/img/Group 11662.png'}}" alt="">
                     </div>
-                    <div class="cart_price_user_text1" id="cart_price_user">{{$test['discount_price']}}</div>
-                    <div class="cart_price_user_text2">円</div>
+                    <div class="cart_price_user_text3" id="cart_price_user">{{$test['discount_price']}}</div>
+                    <div class="cart_price_user_text4 ">円</div>
                 </div>
             </div>
             <div class="tab-content cart-input__body">
@@ -166,9 +166,9 @@
                     <div class="qainput_radio">
                         <div class="qainput__label">ご希望の決済方法</div>
                         <div class="qainput_radiogrp">
-                            <input type="radio" class="qainput__radio_first cart_radio_pay" value="コンビニ決済" name="cart_payment" checked>コンビニ決済
-                            <input type="radio" class="qainput__radio cart_radio_pay" value="カード決済" name="cart_payment">カード決済
-                            <input type="radio" class="qainput__radio cart_radio_pay" value="その他" name="cart_payment">その他
+                            <div><input type="radio" class="qainput__radio_first cart_radio_pay" value="コンビニ決済" name="cart_payment" checked>コンビニ決済</div>
+                            <div><input type="radio" class="qainput__radio cart_radio_pay" value="カード決済" name="cart_payment">カード決済</div>
+                            <div><input type="radio" class="qainput__radio cart_radio_pay" value="その他" name="cart_payment">その他</div>
                         </div>
                     </div>
                     <div class="qainput_prnprotect">個人情報保護方針記載する</div>
