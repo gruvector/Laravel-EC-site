@@ -29,6 +29,8 @@ use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SmsController;
 use App\Http\Controllers\SocialController;
+use App\Http\Controllers\CustomAuthController;
+
 use Illuminate\Support\Facades\Route;
 use PHPUnit\Util\Test;
 
@@ -260,7 +262,6 @@ Route::view('/home', 'pages.index')->name('home');
 Route::get('/voice1', [AchieveController::class, 'index'])->name('voice1');
 Route::view('/voice2', 'pages.clients_voice2')->name('voice2');
 Route::view('/QA', 'pages.que_ans')->name('QA');
-Route::view('/userlogin', 'pages.userlogin')->name('userlogin');
 // Route::view('/cart', 'pages.cart')->name('cart');
 Route::view('/order', 'pages.order')->name('order');
 Route::post('/payment-order', [TestPaymantController::class, 'payment_charge'])->name('payment_order');
@@ -269,6 +270,12 @@ Route::get('/EC-intro', [ProductController::class, 'ec_intro'])->name('EC-intro'
 Route::get('/cart/{id}', [ProductController::class, 'cart_ec'])->name('cart_ec');
 Route::get('/sales', [ProductController::class, 'sales'])->name('sales');
 
+Route::get('/dashboard', [CustomAuthController::class, 'dashboard']); 
+Route::get('/login', [CustomAuthController::class, 'index'])->name('login');
+Route::post('/custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
+Route::get('/registration', [CustomAuthController::class, 'registration'])->name('register-user');
+Route::post('/custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
+Route::get('/signout', [CustomAuthController::class, 'signOut'])->name('signout'); 
 
 
 
