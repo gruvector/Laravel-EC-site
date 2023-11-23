@@ -9,7 +9,7 @@
     <div class="nav_img">
         <div class="topnav">
             <a href="#">
-                <div class="nav_logo__div">
+                <div class="nav_logo__div"  id="sidenav_open">
                     <div class="nav_logo__circle">
                         <span class="nav_logo_circle__span"></span>
                     </div>
@@ -64,8 +64,20 @@
             <div class="bottomtext2">研ぎの事例紹介</div>
         </div>
         <div class="bottom_img"></div>
-        <div class="social">
-            
+        <div id="mySidenav" class="header_sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="sidenav_close">&times;</a>
+            <a href="{{ route('home') }}">HOME</a>
+            <a href="{{ route('intro') }}">私たちについて</a>
+            <a href="{{ route('condition') }}">サービス紹介</a>
+            <a href="{{ route('EC-intro') }}">EC紹介</a>
+            <a href="{{ route('voice1') }}">お客様の声1</a>
+            <a href="{{ route('voice2') }}">お客様の声2</a>
+            <a href="{{ route('QA') }}">Q&A</a>
+            <a href="{{ route('sales') }}">ストアトップ</a>
+            <hr >
+            <a href="{{ route('userlogin') }}">ログイン</a>
+            <a href="{{ route('order') }}">ご注文</a>
+            <a href="#">買い物かご</a>
         </div>
     </div>
 </div>
@@ -280,8 +292,8 @@
                 <div class="cart_price_user_arrow">
                     <img src="{{'assets/img/Group 11662.png'}}" alt="">
                 </div>
-                <div class="cart_price_user_text1" id="order_price_user">2650</div>
-                <div class="cart_price_user_text2">円</div>
+                <div class="cart_price_user_text3" id="order_price_user">2650</div>
+                <div class="cart_price_user_text4">円</div>
             </div>
         </div>
         <div class="tab-content cart-input__body">
@@ -289,15 +301,15 @@
                 <div class="qainput_radio">
                     <div class="qainput__label">オプション</div>
                     <div class="qainput_radiogrp">
-                        <input type="radio" class="qainput__radio_first" name="cart_option" value="追加しない" checked>追加しない
-                        <input type="radio" class="qainput__radio" name="cart_option" value="追加する">追加する
+                        <div><input type="radio" class="qainput__radio_first" name="cart_option" value="追加しない" checked>追加しない</div>
+                        <div><input type="radio" class="qainput__radio" name="cart_option" value="追加する">追加する</div>
                     </div>
                 </div>
                 <div class="qainput_radio">
                     <div class="qainput__label">お申込方法</div>
                     <div class="qainput_radiogrp">
-                        <input type="radio" class="qainput__radio_first" name="cart_apply" value="ゲストで申し込み" checked>ゲストで申し込み
-                        <input type="radio" class="qainput__radio" name="cart_apply" value="会員登録して申し込む">会員登録して申し込む
+                        <div><input type="radio" class="qainput__radio_first" name="cart_apply" value="ゲストで申し込み" checked>ゲストで申し込み</div>
+                        <div><input type="radio" class="qainput__radio" name="cart_apply" value="会員登録して申し込む">会員登録して申し込む</div>
                     </div>
                 </div>
                 <div class="qainput_nppe">
@@ -334,9 +346,9 @@
                 <div class="qainput_radio">
                     <div class="qainput__label">ご希望の決済方法</div>
                     <div class="qainput_radiogrp">
-                        <input type="radio" class="qainput__radio_first cart_radio_pay" value="コンビニ決済" name="cart_payment">コンビニ決済
-                        <input type="radio" class="qainput__radio cart_radio_pay" value="カード決済" name="cart_payment" checked>カード決済
-                        <input type="radio" class="qainput__radio cart_radio_pay" value="その他" name="cart_payment">その他
+                        <div><input type="radio" class="qainput__radio_first cart_radio_pay" value="コンビニ決済" name="cart_payment">コンビニ決済</div>
+                        <div><input type="radio" class="qainput__radio cart_radio_pay" value="カード決済" name="cart_payment" checked>カード決済</div>
+                        <div><input type="radio" class="qainput__radio cart_radio_pay" value="その他" name="cart_payment">その他</div>
                     </div>
                 </div>
                 <div class="qainput_prnprotect">個人情報保護方針記載する</div>
@@ -620,6 +632,12 @@ $(document).ready(function(){
             $('#order_contact_details').addClass('active in');
             
         }); 
+        $("#sidenav_open").click(function() {
+            $("#mySidenav").css("width", "250px");
+        })
+        $("#sidenav_close").click(function() {
+            $("#mySidenav").css("width", "0px");
+        })
 });
 </script>
 

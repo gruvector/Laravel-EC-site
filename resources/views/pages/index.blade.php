@@ -27,7 +27,7 @@
         <div class="nav_img">
             <div class="topnav">
                 <a href="#">
-                    <div class="nav_logo__div">
+                    <div class="nav_logo__div" id="sidenav_open">
                         <div class="nav_logo__circle">
                             <span class="nav_logo_circle__span"></span>
                         </div>
@@ -82,6 +82,21 @@
                 <div class="bottomtext2">研ぎの事例紹介</div>
             </div>
             <div class="bottom_img">
+            </div>
+            <div id="mySidenav" class="header_sidenav">
+                <a href="javascript:void(0)" class="closebtn" id="sidenav_close">&times;</a>
+                <a href="{{ route('home') }}">HOME</a>
+                <a href="{{ route('intro') }}">私たちについて</a>
+                <a href="{{ route('condition') }}">サービス紹介</a>
+                <a href="{{ route('EC-intro') }}">EC紹介</a>
+                <a href="{{ route('voice1') }}">お客様の声1</a>
+                <a href="{{ route('voice2') }}">お客様の声2</a>
+                <a href="{{ route('QA') }}">Q&A</a>
+                <a href="{{ route('sales') }}">ストアトップ</a>
+                <hr >
+                <a href="{{ route('userlogin') }}">ログイン</a>
+                <a href="{{ route('order') }}">ご注文</a>
+                <a href="#">買い物かご</a>
             </div>
         </div>
     </div>
@@ -492,6 +507,14 @@
                         items: 4
                     }
                 }
+            })
+
+            $("#sidenav_open").click(function() {
+                $("#mySidenav").css("width", "250px");
+            })
+            
+            $("#sidenav_close").click(function() {
+                $("#mySidenav").css("width", "0px");
             })
         });
     </script>

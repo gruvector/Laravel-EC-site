@@ -1639,7 +1639,12 @@ div.merchan_main1 > a {
 .qainput_radiogrp {
     display: flex;
     align-items: center;
+}
+.qainput_radiogrp > div {
+    display: flex;
+    align-items: center;
     font-size: 1.6rem;
+    margin-top: 1rem;
 }
 .qainput__radio {
     margin-left: 5rem;
@@ -2108,9 +2113,9 @@ button.stripe-button-el:hover span{
 
 .order_tab-pane {
     background-color: #FFCE5D;
-    height: 50rem;
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
 }
@@ -2172,11 +2177,10 @@ button.stripe-button-el:hover span{
     margin: 0;
     font-weight: 700;
     line-height: 5rem;
+    text-align: center;
 }
 .order_tab_part1_3 {
-    position: absolute;
-    right: 0;
-    top: 1.5rem;
+    margin-left: 5rem;
     display: flex;
     align-items: center;
 }
@@ -2191,14 +2195,14 @@ button.stripe-button-el:hover span{
 }
 .order_tab_part2_3 {
     display: grid;
-    grid-template-columns: auto auto; 
+    grid-template-columns: 50% 50%; 
     margin-top: 4.5rem;
+    column-gap: 1rem;
 }
 .order_tab_part2_3_1 {
     font-size: 1.6rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid #FFCE5D;
-    width: 80%;
     padding-bottom: 2rem;
 }
 .custom_topics_btn__button1 {
@@ -2347,9 +2351,7 @@ button.stripe-button-el:hover span{
     .bottomtext2 {
         font-size: 6rem;
     }
-    .nav_logo__div {
-        height: 10rem;
-    }
+    
     .before2_arrow {
         transform: translate(calc(45.7vw), 18rem);
     }
@@ -2357,10 +2359,17 @@ button.stripe-button-el:hover span{
         column-gap: 3rem;
         padding: 5rem 2rem;
     }
-    
-    
+    .owl-prev {
+        transform: translateX(calc(100vw - 150px));
+    }
+    .sales_part {
+        grid-template-columns: auto auto auto auto;
+    }
 }
 @media only screen and (max-width: 768px) {
+    .nav_logo__div {
+        width: 12rem;
+    }
     .footer {
         padding: 4rem;
         padding-top: 6rem;
@@ -2479,6 +2488,18 @@ button.stripe-button-el:hover span{
     .qainput__select1 {
         padding-left: 2px;
     }
+    .order_tab_part2 {
+        padding-top: 2rem;
+    }
+    .order_tab_part1_2_text1 {
+        text-align: center;
+    }
+    .sales_part {
+        grid-template-columns: auto auto auto
+    }
+    .topmenu {
+        grid-template-columns: auto auto auto auto;
+    }
 }
 @media only screen and (max-width: 560px) {
     .custom_topics {
@@ -2542,6 +2563,17 @@ button.stripe-button-el:hover span{
     }
 }
 @media only screen and (max-width: 425px) {
+    .nav_logo__div {
+        height: 8rem;
+        width: 8rem;
+    }
+    .nav_logo_circle__span  {
+        width: calc(6vw);
+        height: calc(6vw);
+    }
+    .nav2 {
+        display: none;
+    }
     .footer {
         display: flex;
         justify-content: center;
@@ -2615,7 +2647,6 @@ button.stripe-button-el:hover span{
     .qainput__radio {
         margin-left: 15px;
         padding: 0;
-        margin-top: 1rem;
     }
     .qainput__radio_first {
         margin-left: 15px;
@@ -2624,12 +2655,104 @@ button.stripe-button-el:hover span{
         font-size: 1.6rem;
         display: flex;
         align-items: center;
+        justify-content: center;
+    }
+    .order-tab-link__text1 {
+        font-size: 2rem;
+    }
+    .order-tab-link__text2 {
+        font-size: 1rem;
+    }
+    .order_tab_part1 {
+        flex-direction: column-reverse;
+        height: 12rem;
+    }
+    .order_tab_part1_1 {
+        display: none;
+    }
+    .order_tab_part2_3 {
+        grid-template-columns: auto;
+        margin-top: 2rem;
+    }
+    .order_tab_part2_2 {
+        margin-top: 2rem;
+    }
+    .order_tab_part2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .order_tab_part2_3_1 {
+        font-size: 1.4rem;
+    }
+    .order_tab_part1_3 {
+        margin-left: 0;
+    }
+    .cart_show1 {
+        flex-direction: column;
+    }
+    .login_desc {
+        width: calc(70vw);
+    }
+    .loginform {
+        width: 100%;
+        padding: 2rem;
+    }
+    .sales_part {
+        grid-template-columns: auto auto;
+    }
+    .topmenu {
+        grid-template-columns: auto auto;
     }
 }
 
+.cart_price_user_text3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.cart_price_user_text4 {
+    font-size: 1.7rem;
+}
 
 
+/* Side Bar */
+.header_sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
+.header_sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.header_sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.header_sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .header_sidenav {padding-top: 15px;}
+    .header_sidenav a {font-size: 18px;}
+}
 
 
 

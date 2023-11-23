@@ -1499,7 +1499,12 @@ img.table_content_img {
 .qainput_radiogrp {
     display: flex;
     align-items: center;
+}
+.qainput_radiogrp > div {
+    display: flex;
+    align-items: center;
     font-size: 1.6rem;
+    margin-top: 1rem;
 }
 .qainput__radio {
     margin-left: 5rem;
@@ -2148,8 +2153,14 @@ button.stripe-button-el:hover span{
     .nav_logo__div {
         height: 10rem;
     }
+    .owl-prev {
+        transform: translateX(calc(100vw - 150px));
+    }
 }
 @media only screen and (max-width: 768px) {
+    .nav_logo__div {
+        width: 12rem;
+    }
     .footer {
         padding: 4rem;
         padding-top: 6rem;
@@ -2186,6 +2197,17 @@ button.stripe-button-el:hover span{
     }
 }
 @media only screen and (max-width: 425px) {
+    .nav_logo__div {
+        height: 8rem;
+        width: 8rem;
+    }
+    .nav_logo_circle__span {
+        width: calc(6vw);
+        height: calc(6vw);
+    }
+    .nav2 {
+        display: none;
+    }
     .footer {
         display: flex;
         justify-content: center;
@@ -2241,10 +2263,10 @@ button.stripe-button-el:hover span{
         justify-content: flex-start;
         align-items: flex-start;
     }
+    
     .qainput__radio {
         margin-left: 15px;
         padding: 0;
-        margin-top: 1rem;
     }
     .qainput__radio_first {
         margin-left: 15px;
@@ -2253,6 +2275,7 @@ button.stripe-button-el:hover span{
         font-size: 1.6rem;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .cart_show1 {
         flex-direction: column;
@@ -2264,4 +2287,46 @@ button.stripe-button-el:hover span{
 }
 .cart_price_user_text4 {
     font-size: 1.7rem;
+}
+
+/* side bar */
+
+/* Side Bar */
+.header_sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.header_sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.header_sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.header_sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .header_sidenav {padding-top: 15px;}
+    .header_sidenav a {font-size: 18px;}
 }

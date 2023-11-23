@@ -10,7 +10,7 @@
         <div class="nav_img1">
             <div class="topnav">
                 <a href="#">
-                    <div class="nav_logo__div">
+                    <div class="nav_logo__div" id="sidenav_open">
                         <div class="nav_logo__circle">
                             <span class="nav_logo_circle__span"></span>
                         </div>
@@ -62,6 +62,21 @@
             </div>
         </div>
         <div class="bottom_img1"></div>
+        <div id="mySidenav" class="header_sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="sidenav_close">&times;</a>
+            <a href="{{ route('home') }}">HOME</a>
+            <a href="{{ route('intro') }}">私たちについて</a>
+            <a href="{{ route('condition') }}">サービス紹介</a>
+            <a href="{{ route('EC-intro') }}">EC紹介</a>
+            <a href="{{ route('voice1') }}">お客様の声1</a>
+            <a href="{{ route('voice2') }}">お客様の声2</a>
+            <a href="{{ route('QA') }}">Q&A</a>
+            <a href="{{ route('sales') }}">ストアトップ</a>
+            <hr >
+            <a href="{{ route('userlogin') }}">ログイン</a>
+            <a href="{{ route('order') }}">ご注文</a>
+            <a href="#">買い物かご</a>
+        </div>
     </div>
 
     {{-- Header End --}}
@@ -121,15 +136,15 @@
                     <div class="qainput_radio">
                         <div class="qainput__label">オプション</div>
                         <div class="qainput_radiogrp">
-                            <input type="radio" class="qainput__radio_first" name="cart_option" value="追加しない" checked>追加しない
-                            <input type="radio" class="qainput__radio" name="cart_option" value="追加する">追加する
+                            <div><input type="radio" class="qainput__radio_first" name="cart_option" value="追加しない" checked>追加しない</div>
+                            <div><input type="radio" class="qainput__radio" name="cart_option" value="追加する">追加する</div>
                         </div>
                     </div>
                     <div class="qainput_radio">
                         <div class="qainput__label">お申込方法</div>
                         <div class="qainput_radiogrp">
-                            <input type="radio" class="qainput__radio_first" name="cart_apply" value="ゲストで申し込み" checked>ゲストで申し込み
-                            <input type="radio" class="qainput__radio" name="cart_apply" value="会員登録して申し込む">会員登録して申し込む
+                            <div><input type="radio" class="qainput__radio_first" name="cart_apply" value="ゲストで申し込み" checked>ゲストで申し込み</div>
+                            <div><input type="radio" class="qainput__radio" name="cart_apply" value="会員登録して申し込む">会員登録して申し込む</div>
                         </div>
                     </div>
                     <div class="qainput_nppe">
@@ -255,7 +270,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-
+            $("#sidenav_open").click(function() {
+                $("#mySidenav").css("width", "250px");
+            })
+            $("#sidenav_close").click(function() {
+                $("#mySidenav").css("width", "0px");
+            })
             $("#cart_checkbox").click(function() {
                 if($("#cart_checkbox:checked").val() == "on") {
                     $("#cart_btn_login_details").removeAttr('disabled');
@@ -320,7 +340,7 @@
                 $('#cart_contact_details').addClass('active in');
             });      
         });
-        </script>
+    </script>
         
     {{-- Cart Part End --}}
 @endsection
