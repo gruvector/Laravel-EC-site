@@ -36,11 +36,14 @@ class Admin extends Authenticatable
      * @var array
      */
     protected $hidden = [
+        'email',
         'password',
         'remember_token',
         'two_factor_recovery_codes',
         'two_factor_secret',
     ];
+
+    protected $table = ['admin'];
 
     /**
      * The attributes that should be cast to native types.

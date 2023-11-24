@@ -354,7 +354,7 @@
                 <div class="qainput_prnprotect">個人情報保護方針記載する</div>
                 <div class="qainput_checkbox">
                     <input type="checkbox" name="cart_checkbox" id="order_checkbox"> &nbsp;<label for="cart_checkbox">上記内容に同意する</label>
-                </div>
+                </div>  
                 <div>
                     <button type="button" name="btn_login_details" id="order_btn_login_details" class="custom_topics_btn__button" disabled>内容を確認する</button>
                 </div>

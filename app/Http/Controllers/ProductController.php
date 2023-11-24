@@ -7,6 +7,8 @@ use App\Models\Admin\Brand;
 use App\Models\Admin\Category;
 use App\Models\Admin\Subcategory;
 use App\Models\Product;
+use App\Models\Order;
+use App\Models\Shipping;
 use Illuminate\Http\Request;
 use Image;
 
@@ -47,6 +49,12 @@ class ProductController extends Controller
         return view('pages.cart', compact('test'));
     }
 
+    public function admin_table() {
+        $product = Product::all();
+        $order = Order::all();
+        $shipping = Shipping::all();
+        return view('pages.dashboard', compact('product','order','shipping'));
+    }
     public function create()
     {
         $category = Category::all();

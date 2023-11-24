@@ -2150,9 +2150,7 @@ button.stripe-button-el:hover span{
     .bottomtext2 {
         font-size: 6rem;
     }
-    .nav_logo__div {
-        height: 10rem;
-    }
+    
     .owl-prev {
         transform: translateX(calc(100vw - 150px));
     }

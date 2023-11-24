@@ -16,13 +16,15 @@
 
     <!-- Toastr css -->
     <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        window.onload = function() {
+            history.pushState({}, '', '/hidden-url');
+        };
+    </script>
 </head>
 
 <body>
             @yield('content')
-
-
-            
 
             <!-- Footer -->
 

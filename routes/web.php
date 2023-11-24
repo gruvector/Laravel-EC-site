@@ -29,8 +29,8 @@ use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SmsController;
 use App\Http\Controllers\SocialController;
-use App\Http\Controllers\CustomAuthController;
-
+use App\Http\Controllers\CustomLoginController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use PHPUnit\Util\Test;
 
@@ -54,13 +54,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin:admin']], function ()
     Route::post('/login', [AdminController::class, 'store'])->name('admin.login');
 });
 
-Route::middleware(['auth:sanctum,admin', 'verified'])->get('/admin/dashboard', function () {
-    return view('admin.index');
-})->name('dashboard');
+// // Route::middleware(['auth:sanctum,admin', 'verified'])->get('/admin/dashboard', function () {
+//     return view('admin.index');
+// })->name('dashboard');
 
-Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function () {
-    return view('user.dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum,web', 'verified'])->get('/dashboard', function () {
+//     return view('user.dashboard');
+// })->name('dashboard');
 
 Route::get('/admin/logout', [AdminController::class, 'destroy'])->name('admin.logout');
 Route::get('/admin/profile', [MainAdminController::class, 'AdminProfile'])->name('admin.profile');
@@ -71,10 +71,10 @@ Route::post('/admin/password/update', [MainAdminController::class, 'AdminPasswor
 
 //User All Route
 Route::get('/user/logout', [MainUserController::class, 'Logout'])->name('user.logout');
-Route::get('/dashboard', [MainUserController::class, 'UserProfile'])->name('user.profile');
-Route::get('/user/dashboard/edit', [MainUserController::class, 'UserProfileEdit'])->name('profile.edit');
+// Route::get('/dashboard', [MainUserController::class, 'UserProfile'])->name('user.profile');
+// Route::get('/user/dashboard/edit', [MainUserController::class, 'UserProfileEdit'])->name('profile.edit');
 Route::post('/user/profile/store', [MainUserController::class, 'UserProfileStore'])->name('profile.store');
-Route::get('/user/dashboard/password/edit', [MainUserController::class, 'UserPasswordEdit'])->name('user.password.edit');
+// Route::get('/user/dashboard/password/edit', [MainUserController::class, 'UserPasswordEdit'])->name('user.password.edit');
 // Route::post('/user/password/update', [MainUserController::class, 'UserPasswordUpdate'])->name('password.update');
 
 // All Category Route
@@ -270,12 +270,11 @@ Route::get('/EC-intro', [ProductController::class, 'ec_intro'])->name('EC-intro'
 Route::get('/cart/{id}', [ProductController::class, 'cart_ec'])->name('cart_ec');
 Route::get('/sales', [ProductController::class, 'sales'])->name('sales');
 
-Route::get('/dashboard', [CustomAuthController::class, 'dashboard']); 
-Route::get('/login', [CustomAuthController::class, 'index'])->name('login');
-Route::post('/custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
-Route::get('/registration', [CustomAuthController::class, 'registration'])->name('register-user');
-Route::post('/custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
-Route::get('/signout', [CustomAuthController::class, 'signOut'])->name('signout'); 
+Route::get('/login', [LoginController::class, 'index'])->name('userlogin');
+Route::post('/login', [LoginController::class, 'store'])->name('login');
+Route::get('/dashboard', [ProductController::class,'admin_table'])->name('dashboard');
+
+
 
 
 

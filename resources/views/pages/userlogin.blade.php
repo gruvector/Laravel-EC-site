@@ -88,32 +88,33 @@
                 <a href="#">こちら</a>から無料会員登録してください。
             </div>
         </div>
-        <form action="{{route('login.custom')}}" method="post" class="loginform">
+        <form action="{{route('llogin')}}" method="post" class="loginform">
             @csrf
             <label for="login_user">ユーザー名またはメールアドレス</label>
             <div class="email_icon">
-                <input type="email" name="login_user" class="login_user__input" required>
+                <input type="email" name="email" class="login_user__input" required>
                 <img src="{{ "assets/img/email_icon.png" }}" alt="">
             </div>
             @if ($errors->has('email'))
                 <span class="text-danger">{{ $errors->first('email') }}</span>
-            @endif
+            @endif<br />
             <label for="login_pwd">パスワード</label>
             <div class="email_icon">
-                <input type="password" name="login_pwd" class="login_user__input" required>
+                <input type="password" name="password" class="login_user__input" required>
                 <img src="{{ "assets/img/pwd_icon.png" }}" alt="">
             </div>
             @if ($errors->has('password'))
                 <span class="text-danger">{{ $errors->first('password') }}</span>
-            @endif
+            @endif<br />
             <div class="login_bottom">
                 <div><input type="checkbox" name="login_remember" id="">ログイン情報を記憶する</div>
-                <a class="login_forget">パスワード紛失の方へ</a>
+                <a class="login_forget" href="{{route('dashboard')}}">パスワード紛失の方へ</a>
             </div>
             <button type="submit" class="custom_topics_btn__button" style="width: 100%;">ログイン</button>
         </form>
     </div>
     {{-- Topics End --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
         $(document).ready(function(){

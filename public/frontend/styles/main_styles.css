@@ -2584,6 +2584,9 @@ button.stripe-button-el:hover span{
     .footer2 {
         display: none;
     }
+    .aboutus_aboutus {
+        font-size: 3.5rem;
+    }
     .aboutus2_aboutus {
         font-size: 3.5rem;
     }
@@ -2754,5 +2757,53 @@ button.stripe-button-el:hover span{
     .header_sidenav a {font-size: 18px;}
 }
 
+/* Style the tab */
+.admin_tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-top: 3rem;
+    width: calc(90vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Style the buttons inside the tab */
+  .admin_tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .admin_tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .admin_tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .admin_tabcontent {
+    display: none;
+    margin: 0 auto 3rem auto;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: calc(90vw);
+  }
+  thead {
+    font-size: 3.5rem;
+  }
+  tbody {
+    font-size: 2.5rem;
+  }
 
 
