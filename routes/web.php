@@ -271,7 +271,7 @@ Route::get('/cart/{id}', [ProductController::class, 'cart_ec'])->name('cart_ec')
 Route::get('/sales', [ProductController::class, 'sales'])->name('sales');
 
 Route::get('/login', [LoginController::class, 'index'])->name('userlogin');
-Route::post('/login', [LoginController::class, 'store'])->name('login');
+Route::post('/login', [LoginController::class, 'store'])->name('llogin');
 Route::get('/dashboard', [ProductController::class,'admin_table'])->name('dashboard');
 
 
