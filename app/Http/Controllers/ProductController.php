@@ -55,6 +55,30 @@ class ProductController extends Controller
         $shipping = Shipping::all();
         return view('pages.dashboard', compact('product','order','shipping'));
     }
+
+    public function storeData(Request $request) {
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function create()
     {
         $category = Category::all();

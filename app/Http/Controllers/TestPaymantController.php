@@ -53,7 +53,6 @@ class TestPaymantController extends Controller
         $token = $request->input('stripeToken');
         $price = $request->input('cart_price');
         $aaa = Shipping::find(1);
-        dd($aaa);
         try {
             $charge = Charge::create([
                 'amount' => $price,
