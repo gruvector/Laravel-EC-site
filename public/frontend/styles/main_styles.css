@@ -2806,4 +2806,19 @@ button.stripe-button-el:hover span{
     font-size: 2.5rem;
   }
 
-
+  .form-group > label {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+  .form-group > input.form-control {
+    font-size: 1.4rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+  }
+  .modal-content {
+    padding: 1rem;
+  }
+  .create_btn {
+    margin: 1rem;
+  }

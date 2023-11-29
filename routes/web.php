@@ -274,6 +274,10 @@ Route::get('/login', [LoginController::class, 'index'])->name('userlogin');
 Route::post('/login', [LoginController::class, 'store'])->name('llogin');
 Route::get('/dashboard', [ProductController::class,'admin_table'])->name('dashboard');
 
+Route::get('/edit-ec', [ProductController::class, 'storeData1'])->name('edit_ec');
+Route::get('/edit-user', [ProductController::class, 'storeData3'])->name('edit_user');
+Route::get('/edit-ship', [ProductController::class, 'storeData2'])->name('edit_ship');
+Route::get('/delete-data', [ProductController::class, 'deleteData'])->name('delete_data');
 
 
 

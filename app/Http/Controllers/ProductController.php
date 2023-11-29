@@ -56,26 +56,95 @@ class ProductController extends Controller
         return view('pages.dashboard', compact('product','order','shipping'));
     }
 
-    public function storeData(Request $request) {
+    public function storeData1(Request $request) {
+        if($request->store_type1 == "update"){
+            $store1 = Product::find($request->id1);
+            $store1->product_name = $request->product_name1;
+            $store1->product_color = $request->type1;
+            $store1->selling_price = $request->price1;
+            $store1->discount_price = $request->user_price1;
+            $store1->product_quantity = $request->quantity1;
+            $store1->product_details = $request->details1;
+            $store1->update();
+        };
 
+        if ($request->store_type1 == "create") {
+            $store1 = new Product();
+            $store1->product_name = $request->product_name1;
+            $store1->product_color = $request->type1;
+            $store1->selling_price = $request->price1;
+            $store1->discount_price = $request->user_price1;
+            $store1->product_quantity = $request->quantity1;
+            $store1->product_details = $request->details1;
+            $store1->save();
+        }
+        return redirect()->back();
+        
     }
 
+    public function storeData2(Request $request) {
+        if($request->store_type2 == "update"){
+            $store2 = Shipping::find($request->id2);
+            $store2->ship_name = $request->product_name1;
+            $store2->ship_phone = $request->phone2;
+            $store2->ship_email = $request->email2;
+            $store2->ship_province = $request->province2;
+            $store2->ship_address = $request->address2;
+            $store2->ship_city = $request->city2;
+            $store2->update();
+        };
 
+        if ($request->store_type2 == "create") {
+            $store2 = new Shipping();
+            $store2->ship_name = $request->product_name1;
+            $store2->ship_phone = $request->phone2;
+            $store2->ship_email = $request->email2;
+            $store2->ship_province = $request->province2;
+            $store2->ship_address = $request->address2;
+            $store2->ship_city = $request->city2;
+            $store2->save();
+        }
+        return redirect()->back();
+    }
 
+    public function storeData3(Request $request) {
+        if($request->store_type2 == "update"){
+            $store3 = Order::find($request->id3);
+            $store3->order_name = $request->name3;
+            $store3->order_phone = $request->phone3;
+            $store3->order_email = $request->email3;
+            $store3->order_zipcode = $request->zipcode3;
+            $store3->order_province = $request->province3;
+            $store3->order_city = $request->city3;
+            $store3->order_address = $request->address3;
+            $store3->update();
+        };
 
+        if ($request->store_type2 == "create") {
+            $store3 = new Order();
+            $store3->order_name = $request->name3;
+            $store3->order_phone = $request->phone3;
+            $store3->order_email = $request->email3;
+            $store3->order_zipcode = $request->zipcode3;
+            $store3->order_province = $request->province3;
+            $store3->order_city = $request->city3;
+            $store3->order_address = $request->address3;
+            $store3->save();
+        }
+        return redirect()->back();
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    public function deleteData (Request $request) {
+        if($request->i4 == "1") {
+            $store4 = Product::find($request->id4);
+        } else if($request->i4 == "2") {
+            $store4 = Shipping::find($request->id4);
+        } else {
+            $store4 = Order::find($request->id4);
+        }
+        $store4->delete();
+        return redirect()->back();
+    }
 
 
 
@@ -255,7 +324,6 @@ class ProductController extends Controller
             'product_details' => $request->product_details,
             'video_link' => $request->video_link,
             'main_slider' => $request->main_slider,
-            'product_details' => $request->product_details,
             'hot_deal' => $request->hot_deal,
             'best_rated' => $request->best_rated,
             'trend' => $request->trend,
